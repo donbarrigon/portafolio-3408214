@@ -1,3 +1,2 @@
-import Alpine from 'alpinejs'
-window.Alpine = Alpine
-Alpine.start()  
+let m = "hola desde Bun"
+console.log(m)

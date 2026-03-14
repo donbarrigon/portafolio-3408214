@@ -1,5 +1,12 @@
 # PORTFOLIO-3408214
 
+Hello! 👋
+
+This project is a static portfolio created for the assignment for Professor Jusen.
+Feel free to explore the code, learn from it, and use it however you like.
+
+---
+
 ## To install dependencies:
 
 ```bash
@@ -31,8 +38,19 @@ This project was created for the assignment for Professor Jusen, by the apprenti
 - Roxelis
 - Virginia
 - Yuri
-- Yeberson,
+- Yeberson
 
 ---
+
+## LICENSE
+
+This project is licensed under the MIT License. You are free to:
+
+- Use the code for any purpose
+- Modify it
+- Distribute it
+- Include it in your own projects
+
+## Enjoy! 🚀
 
 This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio 3408214</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background: #f6efe9;
+                color: #4b3a2f;
+            }
+
+            header {
+                background: #c8a27a;
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            nav {
+                background: #e7d5c5;
+                padding: 10px;
+                text-align: center;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            nav a {
+                margin: 10px;
+                text-decoration: none;
+                color: #5a4332;
+                font-weight: bold;
+            }
+
+            section {
+                padding: 60px 40px;
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            .hero {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #6b4f3a;
+            }
+
+            .card {
+                background: white;
+                padding: 22px;
+                margin: 20px 0;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            .btn {
+                margin-top: 10px;
+                background: #c8a27a;
+                border: none;
+                padding: 8px 14px;
+                border-radius: 6px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .hidden {
+                display: none;
+                margin-top: 12px;
+                border-top: 1px solid #eee;
+                padding-top: 12px;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            footer {
+                background: #c8a27a;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+        </style>
+
+        <script>
+            function toggleInfo(id) {
+                const el = document.getElementById(id);
+                if (el.style.display === 'block') {
+                    el.style.display = 'none';
+                } else {
+                    el.style.display = 'block';
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Portfolio 3408214</h1>
+            <p>Portafolio de servicios para el desarrollo y mejora de negocios cafeteros</p>
+        </header>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#empresa">Nuestra empresa</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#paquetes">Paquetes</a>
+        </nav>
+
+        <section id="inicio" class="hero">
+            <h2>Impulsamos el crecimiento de cafeterías</h2>
+
+            <p>En <b>Portfolio 3408214</b> somos una empresa enfocada en fortalecer y modernizar negocios relacionados
+                con el café y el barismo. Trabajamos con cafeterías, emprendimientos y establecimientos que buscan
+                mejorar su oferta y ofrecer una mejor experiencia a sus clientes.</p>
+
+            <p>Sabemos que el café es más que una bebida. Es cultura, encuentro y también una oportunidad de negocio.
+                Por eso ayudamos a cada establecimiento a ampliar su catálogo de bebidas, organizar mejor su servicio y
+                encontrar nuevas formas de crecer.</p>
+
+            <p>Analizamos el estado actual del negocio, identificamos oportunidades de mejora y proponemos soluciones
+                claras que puedan aplicarse en la operación diaria del establecimiento.</p>
+
+            <p>Nuestro objetivo es simple: ayudar a que los negocios cafeteros vendan más, mejoren su servicio y
+                ofrezcan una experiencia que haga que los clientes quieran volver.</p>
+        </section>
+
+        <section id="empresa">
+            <h2>Nuestra empresa</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>Objetivo</h3>
+                    <p>Brindar asesoría y acompañamiento a negocios relacionados con el café para mejorar su oferta de
+                        productos y fortalecer su operación.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Misión</h3>
+                    <p>Acompañar a cafeterías y emprendimientos del sector del café en el proceso de mejorar sus
+                        productos, su servicio y su organización mediante asesoría práctica y capacitación.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Visión</h3>
+                    <p>Ser una empresa reconocida por apoyar el desarrollo de cafeterías y negocios relacionados con el
+                        café, aportando soluciones que impulsen la calidad del servicio y la innovación en bebidas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <div class="card">
+                <h3>Actualización y modernización de bebidas</h3>
+                <p>Nuevas bebidas para ampliar el menú y atraer nuevos clientes.</p>
+                <button class="btn" onclick="toggleInfo('s1')">Ver más</button>
+                <div id="s1" class="hidden">
+                    <p>Analizamos el menú actual y proponemos bebidas frías, bebidas especiales y combinaciones con
+                        otros ingredientes que puedan aumentar las ventas y diferenciar el negocio.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Capacitación para baristas</h3>
+                <p>Mejora del desempeño del personal que prepara el café.</p>
+                <button class="btn" onclick="toggleInfo('s2')">Ver más</button>
+                <div id="s2" class="hidden">
+                    <p>Capacitaciones prácticas sobre preparación de bebidas, uso de equipos, organización de barra y
+                        atención al cliente.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Estrategias de mercadeo</h3>
+                <p>Ideas para atraer más clientes al negocio.</p>
+                <button class="btn" onclick="toggleInfo('s3')">Ver más</button>
+                <div id="s3" class="hidden">
+                    <p>Propuestas de promociones, combos, organización del menú y estrategias simples para redes
+                        sociales.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Asesoría en requisitos legales</h3>
+                <p>Orientación para formalizar el negocio.</p>
+                <button class="btn" onclick="toggleInfo('s4')">Ver más</button>
+                <div id="s4" class="hidden">
+                    <p>Apoyo en procesos como registro en cámara de comercio, requisitos sanitarios y buenas prácticas
+                        de manipulación de alimentos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Desarrollo de productos derivados del café</h3>
+                <p>Nuevas oportunidades de venta relacionadas con el café.</p>
+                <button class="btn" onclick="toggleInfo('s5')">Ver más</button>
+                <div id="s5" class="hidden">
+                    <p>Creación de líneas de venta como café tostado, presentaciones para llevar o productos para
+                        consumo en casa.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Creación de menús</h3>
+                <p>Diseño de menús claros y atractivos.</p>
+                <button class="btn" onclick="toggleInfo('s6')">Ver más</button>
+                <div id="s6" class="hidden">
+                    <p>Organización del menú para facilitar la elección del cliente y destacar los productos más
+                        rentables.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Implementación de herramientas tecnológicas</h3>
+                <p>Uso de herramientas digitales para organizar el negocio.</p>
+                <button class="btn" onclick="toggleInfo('s7')">Ver más</button>
+                <div id="s7" class="hidden">
+                    <p>Apoyo en sistemas de facturación, control de inventario y registro de ventas para mejorar la
+                        gestión del negocio.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="paquetes">
+            <h2>Paquetes de servicio</h2>
+
+            <div class="card">
+                <h3>Paquete básico</h3>
+                <p>Ideal para cafeterías que están comenzando.</p>
+                <button class="btn" onclick="toggleInfo('p1')">Ver paquete</button>
+                <div id="p1" class="hidden">
+                    <ul>
+                        <li>Análisis general del negocio</li>
+                        <li>Recomendaciones de mejora</li>
+                        <li>Propuesta inicial de menú</li>
+                    </ul>
+                    <p>Permite identificar oportunidades rápidas de mejora sin realizar cambios grandes en la operación.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Paquete de crecimiento</h3>
+                <p>Para negocios que ya están funcionando.</p>
+                <button class="btn" onclick="toggleInfo('p2')">Ver paquete</button>
+                <div id="p2" class="hidden">
+                    <ul>
+                        <li>Actualización de bebidas</li>
+                        <li>Capacitación para baristas</li>
+                        <li>Mejora del menú</li>
+                        <li>Recomendaciones de mercadeo</li>
+                    </ul>
+                    <p>Ayuda a mejorar la oferta del negocio y aumentar el valor percibido por los clientes.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Paquete de transformación</h3>
+                <p>Renovación completa del negocio cafetero.</p>
+                <button class="btn" onclick="toggleInfo('p3')">Ver paquete</button>
+                <div id="p3" class="hidden">
+                    <ul>
+                        <li>Análisis completo del negocio</li>
+                        <li>Rediseño del menú</li>
+                        <li>Nuevas bebidas</li>
+                        <li>Capacitación del personal</li>
+                        <li>Estrategias de promoción</li>
+                        <li>Recomendaciones tecnológicas</li>
+                    </ul>
+                    <p>Este paquete busca renovar la propuesta del negocio y mejorar la experiencia del cliente.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Portfolio 3408214 - Servicios para el crecimiento de cafeterías</p>
+        </footer>
+
+    </body>
+
+</html>

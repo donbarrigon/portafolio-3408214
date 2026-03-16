@@ -1,0 +1,6 @@
+// src/ts/main.ts
+var m = "hola desde Bun";
+console.log(m);
+
+//# debugId=5F3AB83296EAC19364756E2164756E21
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiLi4vLi4vc3JjL3RzL21haW4udHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbCiAgICAibGV0IG0gPSBcImhvbGEgZGVzZGUgQnVuXCJcbmNvbnNvbGUubG9nKG0pIgogIF0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLElBQUksSUFBSTtBQUNSLFFBQVEsSUFBSSxDQUFDOyIsCiAgImRlYnVnSWQiOiAiNUYzQUI4MzI5NkVBQzE5MzY0NzU2RTIxNjQ3NTZFMjEiLAogICJuYW1lcyI6IFtdCn0=

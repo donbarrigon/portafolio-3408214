@@ -15,6 +15,7 @@ mkdirSync("dist/js", { recursive: true });
 mkdirSync("dist/css", { recursive: true });
 
 cpSync("src/pages", "dist/pages", { recursive: true });
+cpSync("src/storage", "dist/storage", { recursive: true });
 
 console.log("📄 HTML copiado a dist");
 

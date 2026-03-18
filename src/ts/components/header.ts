@@ -2,7 +2,6 @@ export const menuItems = [
   { name: 'inicio', href: 'home.html', label: 'Inicio' },
   { name: 'servicios', href: 'service.html', label: 'Servicios' },
   { name: 'quienes somos', href: 'about.html', label: 'Quiénes somos' },
-  { name: 'paquetes', href: 'service2.html', label: 'Paquetes' },
   { name: 'contacto', href: 'contact.html', label: 'Contacto' },
 ];
 

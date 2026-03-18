@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/services_details.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Capacitacion - Portafolio 3408214</title>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('servicios');
+    </script>
+
+    <main class="service-detail">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">Capacitación en barismo para <em>elevar la calidad de tu servicio</em></h1>
+          <p class="hero-subtitle">
+            Fortalecemos la cultura cafetera y las buenas prácticas en la preparación de bebidas a base de café
+            mediante capacitación profesional, mejorando la experiencia de tus clientes y estandarizando tus procesos.
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Formación práctica que transforma tu negocio</h2>
+          <p class="intro-text">
+            Ofrecemos apoyo y capacitación especializada en barismo dirigido a cafeterías, restaurantes, panaderías
+            y negocios relacionados con el café. Nuestro objetivo es aportar al fortalecimiento de la cultura cafetera
+            mediante la aplicación de buenas prácticas profesionales.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="services-grid">
+        <div class="container">
+
+          <!-- Service 1: Técnicas de Preparación -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Taza de café -->
+                <ellipse cx="40" cy="45" rx="18" ry="5" fill="var(--bg-btn-color)" opacity="0.2" />
+                <path d="M 22 45 Q 22 60 32 65 L 48 65 Q 58 60 58 45" fill="var(--text-h1-color)" />
+                <ellipse cx="40" cy="45" rx="16" ry="4" fill="var(--text-h2-color)" />
+                <!-- Vapor -->
+                <path d="M 32 38 Q 30 32 32 26" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.6" />
+                <path d="M 40 36 Q 38 30 40 24" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.6" />
+                <path d="M 48 38 Q 50 32 48 26" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.6" />
+                <!-- Asa -->
+                <path d="M 58 50 Q 65 50 65 57 Q 65 64 58 64" stroke="var(--bg-btn-color)" stroke-width="3"
+                  fill="none" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Técnicas de Preparación</h3>
+            <h4 class="service-card-subtitle">Domina los Métodos y Perfecciona cada Taza</h4>
+            <p class="service-card-description">
+              Capacitación especializada en métodos de extracción y preparación de café, desde técnicas fundamentales
+              hasta preparaciones avanzadas que elevan la calidad de cada bebida.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Aprende las mejores prácticas del barismo profesional.</strong> Cubrimos molienda y calibración,
+                métodos de extracción variados, control de calidad en cada preparación y el manejo adecuado de equipos
+                para garantizar resultados consistentes.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Molienda y calibración precisa del café</li>
+              <li>Métodos de extracción y preparación profesional</li>
+              <li>Control de calidad en cada preparación</li>
+              <li>Técnicas de arte latte y presentación</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: Manejo de Equipos -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Máquina de espresso -->
+                <rect x="25" y="30" width="30" height="35" rx="3" fill="var(--text-h1-color)" />
+                <rect x="28" y="33" width="24" height="8" rx="2" fill="var(--bg-btn-color)" />
+                <circle cx="40" cy="50" r="8" fill="var(--text-h2-color)" />
+                <circle cx="40" cy="50" r="5" fill="var(--bg-btn-color)" />
+                <rect x="35" y="58" width="10" height="3" rx="1" fill="var(--bg-btn-color)" />
+                <rect x="30" y="61" width="20" height="8" rx="2" fill="var(--text-h2-color)" />
+                <!-- Herramientas -->
+                <circle cx="62" cy="35" r="6" fill="var(--bg-btn-color)" opacity="0.3" />
+                <rect x="59" y="32" width="6" height="2" fill="var(--text-h1-color)" />
+                <rect x="61" y="30" width="2" height="6" fill="var(--text-h1-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Manejo de Equipos</h3>
+            <h4 class="service-card-subtitle">Operación, Limpieza y Mantenimiento Profesional</h4>
+            <p class="service-card-description">
+              Formación completa en el uso correcto de equipos de café, técnicas de limpieza y mantenimiento preventivo
+              para prolongar la vida útil de tus máquinas y garantizar la calidad del producto.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>El manejo adecuado de equipos es fundamental para la calidad.</strong> Enseñamos operación
+                correcta de maquinaria, rutinas de limpieza profesional, mantenimiento preventivo y solución de
+                problemas comunes para mantener tus equipos en óptimas condiciones.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Operación correcta de máquinas y molinillos</li>
+              <li>Limpieza y sanitización profesional</li>
+              <li>Mantenimiento preventivo de equipos</li>
+              <li>Solución de problemas técnicos básicos</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: Servicio al Cliente -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Persona con corazón (servicio) -->
+                <circle cx="40" cy="28" r="10" fill="var(--bg-btn-color)" opacity="0.2" />
+                <path d="M 25 45 Q 25 40 30 40 L 50 40 Q 55 40 55 45 L 55 60 L 25 60 Z" fill="var(--text-h1-color)" />
+                <!-- Corazón -->
+                <path
+                  d="M 40 52 Q 36 48 32 48 Q 28 48 28 52 Q 28 56 32 60 L 40 67 L 48 60 Q 52 56 52 52 Q 52 48 48 48 Q 44 48 40 52"
+                  fill="var(--bg-btn-color)" opacity="0.4" />
+                <!-- Sonrisa -->
+                <path d="M 33 26 Q 40 30 47 26" stroke="var(--text-h2-color)" stroke-width="2" fill="none" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Servicio al Cliente</h3>
+            <h4 class="service-card-subtitle">Crea Experiencias Memorables en cada Interacción</h4>
+            <p class="service-card-description">
+              Capacitación en atención al cliente enfocada en crear experiencias memorables, comunicar conocimiento
+              sobre café y construir relaciones duraderas con tus consumidores.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>La experiencia del cliente va más allá de la bebida.</strong> Desarrollamos habilidades de
+                comunicación, conocimiento de café de especialidad para compartir con clientes, técnicas de venta
+                consultiva y protocolos de atención que fidelizan.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Protocolos de atención y comunicación efectiva</li>
+              <li>Conocimiento básico de café de especialidad</li>
+              <li>Técnicas de venta consultiva y recomendación</li>
+              <li>Manejo de situaciones y fidelización</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: Estandarización de Procesos -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Checklist/documento -->
+                <rect x="25" y="20" width="30" height="40" rx="3" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="2" />
+                <!-- Checkmarks -->
+                <path d="M 30 30 L 33 33 L 38 28" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <rect x="42" y="29" width="10" height="2" rx="1" fill="var(--text-h2-color)" />
+
+                <path d="M 30 40 L 33 43 L 38 38" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <rect x="42" y="39" width="10" height="2" rx="1" fill="var(--text-h2-color)" />
+
+                <path d="M 30 50 L 33 53 L 38 48" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <rect x="42" y="49" width="10" height="2" rx="1" fill="var(--text-h2-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Estandarización de Procesos</h3>
+            <h4 class="service-card-subtitle">Consistencia y Calidad en cada Preparación</h4>
+            <p class="service-card-description">
+              Implementación de protocolos y buenas prácticas que garantizan consistencia en la calidad del producto,
+              optimizan tiempos y mejoran la eficiencia operativa de tu establecimiento.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>La estandarización es la clave de la excelencia sostenible.</strong> Desarrollamos manuales
+                de procedimientos, recetas estandarizadas, protocolos de control de calidad y sistemas de evaluación
+                que aseguran que cada bebida cumpla con tus estándares.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Desarrollo de manuales de procedimientos</li>
+              <li>Recetas y ratios estandarizados</li>
+              <li>Protocolos de control de calidad</li>
+              <li>Sistemas de evaluación y mejora continua</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Un beneficio mutuo: <em>aprendizaje y crecimiento</em></h2>
+          <p class="intro-text">
+            Esta iniciativa genera valor para todos: nuestros aprendices fortalecen su formación en escenarios
+            reales de trabajo, mientras los establecimientos reciben acompañamiento profesional en prácticas de
+            barismo que contribuyen a mejorar la calidad del servicio ofrecido a sus clientes.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-title">¿Listo para profesionalizar tu equipo?</h2>
+          <p class="cta-text">
+            Llevemos la calidad de tu servicio al siguiente nivel con capacitación especializada en barismo
+            que marca la diferencia.
+          </p>
+          <a href="#contacto" class="btn btn-primary">Solicita Información sobre Capacitación</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+
+</html>

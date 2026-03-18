@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/services_details.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Servicios - Portafolio 3408214</title>
+    <style>
+      /* ══════════════════════
+     WHY IT MATTERS GRID
+  ══════════════════════ */
+      .why-matters-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+      }
+
+      .matter-card {
+        background: #fff;
+        padding: 2rem 1.75rem;
+        border-radius: 12px;
+        border: 1px solid rgba(200, 162, 122, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .matter-card:hover {
+        border-color: rgba(200, 162, 122, 0.35);
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(75, 58, 47, 0.08);
+      }
+
+      .matter-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-h1-color, #4b3a2f);
+        margin-bottom: 0.75rem;
+        line-height: 1.3;
+      }
+
+      .matter-card p {
+        font-size: 0.92rem;
+        font-weight: 300;
+        line-height: 1.75;
+        color: var(--text-h2-color, #5a4332);
+        margin: 0;
+      }
+
+      @media (max-width: 600px) {
+        .why-matters-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('servicios');
+    </script>
+
+    <main class="service-detail">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">Contar con el equipo correcto es una <em>decisión estratégica</em></h1>
+          <p class="hero-subtitle">
+            Evaluamos tu maquinaria actual y te asesoramos en qué renovar, qué conservar y qué adquirir según
+            el volumen, el estilo y los objetivos de tu negocio. La inversión correcta marca la diferencia entre
+            un servicio promedio y una experiencia excepcional.
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Tu equipo define la calidad de cada taza</h2>
+          <p class="intro-text">
+            En el barismo, la maquinaria no es solo una herramienta: es el corazón de tu operación. Un equipo
+            inadecuado puede limitar tu potencial, aumentar costos operativos y comprometer la consistencia de
+            tu producto. Te ayudamos a tomar decisiones informadas sobre tu inversión en equipos, optimizando
+            recursos y maximizando resultados para que tu cafetería opere con la eficiencia y calidad que tus
+            clientes merecen.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="services-grid">
+        <div class="container">
+
+          <!-- Service 1: Evaluación de Equipos Actuales -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Máquina con lupa -->
+                <rect x="25" y="30" width="22" height="28" rx="3" fill="var(--text-h1-color)" />
+                <rect x="28" y="33" width="16" height="8" rx="2" fill="var(--bg-btn-color)" />
+                <circle cx="36" cy="46" r="6" fill="var(--text-h2-color)" />
+                <rect x="32" y="52" width="8" height="6" rx="2" fill="var(--text-h2-color)" />
+                <!-- Lupa evaluando -->
+                <circle cx="52" cy="42" r="10" fill="var(--bg-btn-color)" opacity="0.3" />
+                <circle cx="52" cy="42" r="6" fill="none" stroke="var(--bg-btn-color)" stroke-width="2" />
+                <line x1="57" y1="47" x2="62" y2="52" stroke="var(--bg-btn-color)" stroke-width="2.5"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Evaluación de Equipos Actuales</h3>
+            <h4 class="service-card-subtitle">Diagnóstico Completo de tu Maquinaria y su Rendimiento</h4>
+            <p class="service-card-description">
+              Realizamos un análisis exhaustivo de tu equipamiento actual: estado técnico, capacidad operativa,
+              eficiencia energética y vida útil restante de cada máquina.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>No toda maquinaria necesita ser reemplazada.</strong> Evaluamos qué equipos pueden optimizarse
+                con mantenimiento, cuáles están llegando al final de su ciclo útil y cuáles están limitando tu capacidad
+                de producción. Te proporcionamos un diagnóstico claro para tomar decisiones informadas.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Inspección técnica detallada de cada equipo</li>
+              <li>Evaluación de rendimiento y consistencia</li>
+              <li>Análisis de costos operativos y energéticos</li>
+              <li>Reporte con recomendaciones prioritarias</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: Asesoría en Selección de Equipos -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tres máquinas comparadas -->
+                <rect x="15" y="35" width="12" height="18" rx="2" fill="var(--text-h2-color)" opacity="0.4" />
+                <rect x="34" y="30" width="12" height="23" rx="2" fill="var(--bg-btn-color)" />
+                <rect x="53" y="35" width="12" height="18" rx="2" fill="var(--text-h2-color)" opacity="0.4" />
+                <!-- Checkmark en el mejor -->
+                <circle cx="40" cy="25" r="6" fill="var(--text-h1-color)" />
+                <path d="M 37 25 L 39 27 L 43 23" stroke="var(--bg-body-color)" stroke-width="1.5" fill="none"
+                  stroke-linecap="round" />
+                <!-- Balanza/equilibrio -->
+                <line x1="15" y1="58" x2="65" y2="58" stroke="var(--text-h1-color)" stroke-width="2" />
+                <circle cx="40" cy="58" r="3" fill="var(--text-h1-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Asesoría en Selección de Equipos</h3>
+            <h4 class="service-card-subtitle">La Maquinaria Perfecta para tus Necesidades Específicas</h4>
+            <p class="service-card-description">
+              Te guiamos en la selección de máquinas de espresso, molinillos, equipos de filtrado y tecnología
+              complementaria según tu volumen de producción, perfil de negocio y presupuesto.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Cada negocio tiene necesidades únicas.</strong> No se trata de la máquina más cara, sino
+                de la más adecuada. Analizamos marcas, modelos, características técnicas y relación costo-beneficio
+                para que inviertas inteligentemente en el equipamiento que realmente necesitas.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Recomendaciones según volumen y estilo de servicio</li>
+              <li>Comparativas de marcas y modelos específicos</li>
+              <li>Análisis de inversión y retorno estimado</li>
+              <li>Orientación sobre especificaciones técnicas clave</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: Optimización de Inversión -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gráfico de inversión -->
+                <circle cx="40" cy="40" r="18" fill="var(--bg-btn-color)" opacity="0.2" />
+                <!-- Flecha crecimiento -->
+                <path d="M 28 48 L 35 40 L 42 44 L 50 32" stroke="var(--text-h1-color)" stroke-width="2.5" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="50" cy="32" r="3" fill="var(--text-h1-color)" />
+                <!-- Monedas -->
+                <circle cx="30" cy="28" r="5" fill="var(--bg-btn-color)" opacity="0.4" />
+                <text x="30" y="31" font-size="8" fill="var(--text-h1-color)" text-anchor="middle"
+                  font-weight="bold">$</text>
+                <circle cx="52" cy="52" r="5" fill="var(--bg-btn-color)" opacity="0.4" />
+                <text x="52" y="55" font-size="8" fill="var(--text-h1-color)" text-anchor="middle"
+                  font-weight="bold">$</text>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Optimización de Inversión</h3>
+            <h4 class="service-card-subtitle">Maximiza tu Presupuesto sin Comprometer Calidad</h4>
+            <p class="service-card-description">
+              Diseñamos estrategias de inversión escalonada, priorizando los equipos más críticos y estableciendo
+              un plan de renovación gradual alineado con tu capacidad financiera y objetivos de crecimiento.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>No necesitas renovar todo al mismo tiempo.</strong> Te ayudamos a priorizar inversiones según
+                impacto en calidad, urgencia operativa y retorno esperado. Planificamos renovaciones por etapas para
+                que tu negocio mejore continuamente sin comprometer tu flujo de caja.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Plan de inversión por fases y prioridades</li>
+              <li>Estrategias de financiamiento y adquisición</li>
+              <li>Cálculo de retorno de inversión por equipo</li>
+              <li>Opciones de equipos nuevos, seminuevos o reacondicionados</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: Capacidad y Escalabilidad -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tazas en escala creciente -->
+                <ellipse cx="25" cy="52" rx="8" ry="3" fill="var(--bg-btn-color)" opacity="0.3" />
+                <path d="M 17 52 Q 17 60 22 62 L 28 62 Q 33 60 33 52" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <ellipse cx="40" cy="48" rx="10" ry="3.5" fill="var(--bg-btn-color)" opacity="0.4" />
+                <path d="M 30 48 Q 30 58 36 61 L 44 61 Q 50 58 50 48" fill="var(--text-h2-color)" opacity="0.8" />
+
+                <ellipse cx="57" cy="43" rx="12" ry="4" fill="var(--bg-btn-color)" opacity="0.5" />
+                <path d="M 45 43 Q 45 55 52 59 L 62 59 Q 69 55 69 43" fill="var(--text-h1-color)" />
+
+                <!-- Flecha crecimiento -->
+                <path d="M 20 35 L 60 25" stroke="var(--bg-btn-color)" stroke-width="2" stroke-dasharray="3,3" />
+                <path d="M 55 27 L 60 25 L 58 30" fill="var(--bg-btn-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Capacidad y Escalabilidad</h3>
+            <h4 class="service-card-subtitle">Equipos que Crecen con tu Negocio</h4>
+            <p class="service-card-description">
+              Analizamos tu volumen actual de producción y proyecciones de crecimiento para recomendar equipos
+              que no solo satisfagan tus necesidades presentes, sino que soporten tu expansión futura.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Piensa en el mediano y largo plazo.</strong> Un equipo subdimensionado te limitará cuando
+                crezcas; uno sobredimensionado representa una inversión innecesaria. Te ayudamos a encontrar el balance
+                perfecto entre capacidad actual y potencial de escalabilidad.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Análisis de volumen actual y proyecciones</li>
+              <li>Dimensionamiento correcto de capacidad</li>
+              <li>Evaluación de flexibilidad y modularidad</li>
+              <li>Plan de crecimiento de infraestructura</li>
+            </ul>
+          </article>
+
+          <!-- Service 5: Compatibilidad y Flujo de Trabajo -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Engranajes conectados -->
+                <circle cx="32" cy="40" r="12" fill="none" stroke="var(--text-h1-color)" stroke-width="2.5" />
+                <circle cx="32" cy="40" r="5" fill="none" stroke="var(--text-h1-color)" stroke-width="2" />
+                <rect x="29" y="25" width="6" height="6" fill="var(--text-h1-color)" />
+                <rect x="29" y="49" width="6" height="6" fill="var(--text-h1-color)" />
+
+                <circle cx="48" cy="40" r="12" fill="none" stroke="var(--bg-btn-color)" stroke-width="2.5" />
+                <circle cx="48" cy="40" r="5" fill="none" stroke="var(--bg-btn-color)" stroke-width="2" />
+                <rect x="45" y="25" width="6" height="6" fill="var(--bg-btn-color)" />
+                <rect x="45" y="49" width="6" height="6" fill="var(--bg-btn-color)" />
+
+                <!-- Flechas de flujo -->
+                <path d="M 20 52 L 28 52" stroke="var(--text-h2-color)" stroke-width="2" stroke-linecap="round" />
+                <path d="M 38 52 L 46 52" stroke="var(--text-h2-color)" stroke-width="2" stroke-linecap="round" />
+                <path d="M 54 52 L 62 52" stroke="var(--text-h2-color)" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Compatibilidad y Flujo de Trabajo</h3>
+            <h4 class="service-card-subtitle">Equipos que Funcionan en Armonía</h4>
+            <p class="service-card-description">
+              Verificamos que todos tus equipos sean compatibles entre sí y que se integren de manera eficiente
+              en tu espacio de trabajo, optimizando tiempos, movimientos y productividad del equipo.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>La sinergia entre equipos es crucial.</strong> Una máquina excelente puede ser ineficiente
+                si no tiene el molinillo adecuado o si su ubicación interrumpe el flujo. Diseñamos tu setup completo
+                considerando ergonomía, eficiencia y experiencia del barista.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Análisis de compatibilidad entre equipos</li>
+              <li>Optimización de layout y disposición espacial</li>
+              <li>Evaluación de flujo de trabajo del barista</li>
+              <li>Recomendaciones ergonómicas y de productividad</li>
+            </ul>
+          </article>
+
+          <!-- Service 6: Mantenimiento y Soporte -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Herramientas de mantenimiento -->
+                <rect x="28" y="35" width="24" height="20" rx="2" fill="var(--text-h1-color)" opacity="0.3" />
+                <!-- Llave inglesa -->
+                <rect x="32" y="25" width="4" height="18" rx="1" fill="var(--text-h1-color)"
+                  transform="rotate(-30 34 34)" />
+                <circle cx="32" cy="28" r="3" fill="none" stroke="var(--text-h1-color)" stroke-width="2" />
+                <!-- Destornillador -->
+                <rect x="44" y="25" width="3" height="18" rx="1" fill="var(--bg-btn-color)"
+                  transform="rotate(30 45.5 34)" />
+                <rect x="43" y="23" width="5" height="4" rx="1" fill="var(--bg-btn-color)"
+                  transform="rotate(30 45.5 25)" />
+                <!-- Calendario/reloj -->
+                <circle cx="40" cy="52" r="8" fill="none" stroke="var(--text-h2-color)" stroke-width="2" />
+                <path d="M 40 48 L 40 52 L 43 54" stroke="var(--text-h2-color)" stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Mantenimiento y Soporte</h3>
+            <h4 class="service-card-subtitle">Prolonga la Vida Útil y Rendimiento de tu Inversión</h4>
+            <p class="service-card-description">
+              Te orientamos sobre protocolos de mantenimiento preventivo, disponibilidad de repuestos, servicio
+              técnico y garantías para asegurar que tu inversión se mantenga productiva por años.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>El equipo correcto necesita el cuidado correcto.</strong> Consideramos la disponibilidad de
+                servicio técnico local, facilidad de acceso a repuestos, complejidad de mantenimiento y costos de
+                operación a largo plazo antes de recomendar cualquier equipo.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Evaluación de disponibilidad de servicio técnico</li>
+              <li>Planes de mantenimiento preventivo recomendados</li>
+              <li>Análisis de costos de operación y repuestos</li>
+              <li>Orientación sobre garantías y respaldo del fabricante</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Why It Matters Section -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Por qué importa el <em>equipamiento correcto</em></h2>
+          <div class="why-matters-grid">
+            <div class="matter-card">
+              <h3>Consistencia en Calidad</h3>
+              <p>
+                Equipos adecuados garantizan que cada bebida cumpla con tus estándares, sin importar quién la prepare.
+                La consistencia genera confianza y fidelidad en tus clientes.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Eficiencia Operativa</h3>
+              <p>
+                Maquinaria bien dimensionada reduce tiempos de preparación, elimina cuellos de botella y permite
+                atender más clientes sin sacrificar calidad ni sobrecargar a tu equipo.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Reducción de Costos</h3>
+              <p>
+                Equipos eficientes consumen menos energía, requieren menos reparaciones y generan menos desperdicio.
+                Una inversión inteligente se paga sola con el tiempo.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Capacidad de Innovación</h3>
+              <p>
+                El equipamiento correcto te permite experimentar con nuevas preparaciones, ofrecer variedad y
+                diferenciarte de la competencia con un portafolio más amplio y sofisticado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-title">Invierte inteligentemente en el corazón de tu operación</h2>
+          <p class="cta-text">
+            No dejes que el equipamiento inadecuado limite tu potencial. Te ayudamos a tomar decisiones estratégicas
+            que optimizan tu inversión y elevan la calidad de tu servicio.
+          </p>
+          <a href="#contacto" class="btn btn-primary">Solicita una Evaluación de Equipos</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+
+</html>

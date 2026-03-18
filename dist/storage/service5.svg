@@ -1,0 +1,87 @@
+<svg viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo transparente -->
+  
+  <!-- Mesa/superficie -->
+  <ellipse cx="300" cy="360" rx="220" ry="35" fill="#e7d5c5" opacity="0.5"/>
+  
+  <!-- Máquina de espresso (izquierda) -->
+  <rect x="80" y="180" width="120" height="140" rx="8" fill="#4b3a2f"/>
+  <rect x="90" y="190" width="100" height="25" rx="4" fill="#c8a27a"/>
+  <circle cx="140" cy="250" r="35" fill="#5a4332"/>
+  <circle cx="140" cy="250" r="28" fill="#c8a27a"/>
+  <circle cx="140" cy="250" r="8" fill="#4b3a2f"/>
+  <rect x="125" y="285" width="30" height="8" rx="2" fill="#c8a27a"/>
+  <rect x="110" y="293" width="60" height="27" rx="6" fill="#5a4332"/>
+  
+  <!-- Portafiltro -->
+  <rect x="135" y="310" width="35" height="6" rx="3" fill="#4b3a2f"/>
+  <ellipse cx="152" cy="320" rx="18" ry="8" fill="#4b3a2f"/>
+  
+  <!-- Taza de latte art (centro) -->
+  <ellipse cx="300" cy="290" rx="50" ry="14" fill="#c8a27a"/>
+  <path d="M 250 290 Q 248 320 260 340 L 340 340 Q 352 320 350 290" fill="#f6efe9"/>
+  <ellipse cx="300" cy="290" rx="48" ry="12" fill="#5a4332"/>
+  
+  <!-- Latte art - corazón -->
+  <path d="M 300 285 Q 290 280 285 285 Q 280 290 285 300 L 300 315 L 315 300 Q 320 290 315 285 Q 310 280 300 285" fill="#f6efe9"/>
+  <path d="M 300 285 Q 295 282 290 285 Q 287 288 290 295 L 300 305 L 310 295 Q 313 288 310 285 Q 305 282 300 285" fill="#e7d5c5"/>
+  
+  <!-- Asa de la taza -->
+  <path d="M 350 305 Q 370 305 370 320 Q 370 335 350 335" fill="none" stroke="#c8a27a" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Granos de café (derecha) -->
+  <g transform="translate(450, 240)">
+    <!-- Montículo de granos -->
+    <ellipse cx="0" cy="60" rx="70" ry="25" fill="#5a4332" opacity="0.3"/>
+    <ellipse cx="-15" cy="45" rx="12" ry="18" fill="#4b3a2f" transform="rotate(-15 -15 45)"/>
+    <path d="M -15 40 Q -15 48 -15 56" stroke="#5a4332" stroke-width="1.5"/>
+    <ellipse cx="5" cy="40" rx="12" ry="18" fill="#5a4332" transform="rotate(20 5 40)"/>
+    <path d="M 5 35 Q 5 43 5 51" stroke="#4b3a2f" stroke-width="1.5"/>
+    <ellipse cx="-25" cy="55" rx="11" ry="17" fill="#6b4f3a" transform="rotate(-25 -25 55)"/>
+    <path d="M -25 50 Q -25 58 -25 65" stroke="#5a4332" stroke-width="1.5"/>
+    <ellipse cx="15" cy="50" rx="13" ry="19" fill="#4b3a2f" transform="rotate(10 15 50)"/>
+    <path d="M 15 45 Q 15 53 15 61" stroke="#5a4332" stroke-width="1.5"/>
+    <ellipse cx="-8" cy="58" rx="12" ry="17" fill="#5a4332" transform="rotate(-5 -8 58)"/>
+    <path d="M -8 53 Q -8 61 -8 68" stroke="#4b3a2f" stroke-width="1.5"/>
+    <ellipse cx="20" cy="62" rx="11" ry="16" fill="#6b4f3a" transform="rotate(15 20 62)"/>
+    <path d="M 20 57 Q 20 65 20 72" stroke="#5a4332" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Vapor elegante -->
+  <g opacity="0.4">
+    <path d="M 280 270 Q 275 245 280 220 Q 283 200 278 180" stroke="#c8a27a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 300 265 Q 297 240 300 215 Q 302 195 298 175" stroke="#c8a27a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 320 270 Q 325 245 320 220 Q 318 200 322 180" stroke="#c8a27a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="278" cy="185" r="3" fill="#c8a27a" opacity="0.6"/>
+    <circle cx="298" cy="180" r="4" fill="#c8a27a" opacity="0.6"/>
+    <circle cx="322" cy="185" r="3" fill="#c8a27a" opacity="0.6"/>
+  </g>
+  
+  <!-- Iconos de redes sociales / presencia digital -->
+  <g transform="translate(300, 80)">
+    <!-- Instagram -->
+    <circle cx="-60" cy="0" r="18" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+    <circle cx="-60" cy="0" r="8" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+    <circle cx="-50" cy="-10" r="2.5" fill="#c8a27a"/>
+    
+    <!-- Facebook -->
+    <rect x="-20" y="-18" width="36" height="36" rx="8" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+    <path d="M 5 -10 L -5 -10 L -5 0 M -10 -5 L 0 -5" stroke="#c8a27a" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Web/Globe -->
+    <circle cx="60" cy="0" r="18" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+    <ellipse cx="60" cy="0" rx="7" ry="18" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+    <line x1="42" y1="0" x2="78" y2="0" stroke="#c8a27a" stroke-width="2.5"/>
+    <path d="M 48 -12 Q 60 -10 72 -12" stroke="#c8a27a" stroke-width="2" fill="none"/>
+    <path d="M 48 12 Q 60 10 72 12" stroke="#c8a27a" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Líneas de conexión sutiles -->
+  <line x1="240" y1="95" x2="270" y2="270" stroke="#e7d5c5" stroke-width="1.5" opacity="0.4" stroke-dasharray="4,4"/>
+  <line x1="300" y1="95" x2="300" y2="265" stroke="#e7d5c5" stroke-width="1.5" opacity="0.4" stroke-dasharray="4,4"/>
+  <line x1="360" y1="95" x2="330" y2="270" stroke="#e7d5c5" stroke-width="1.5" opacity="0.4" stroke-dasharray="4,4"/>
+  
+  <!-- Elementos decorativos - granos dispersos -->
+  <ellipse cx="230" cy="350" rx="7" ry="10" fill="#4b3a2f" opacity="0.25" transform="rotate(-20 230 350)"/>
+  <ellipse cx="380" cy="360" rx="6" ry="9" fill="#5a4332" opacity="0.25" transform="rotate(15 380 360)"/>
+</svg>

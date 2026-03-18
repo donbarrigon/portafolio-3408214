@@ -20,7 +20,7 @@
 
     <script type="module">
       import { headerComponent } from '../js/components/header.js';
-      document.getElementById('header-placeholder').innerHTML = headerComponent('inicio');
+      document.getElementById('header-placeholder').innerHTML = headerComponent('servicios');
     </script>
 
     <main class="w-full">
@@ -34,10 +34,10 @@
 
         <!-- Encabezado -->
         <header class="sv-header">
-          <span class="sv-header-label">
+          <!-- <span class="sv-header-label">
             <span class="sv-header-dot"></span>
             Portafolio de servicios
-          </span>
+          </span> -->
           <h1 class="sv-header-title">
             Soluciones concretas para cafeterías que quieren <em>crecer</em>
           </h1>
@@ -55,7 +55,8 @@
           <article class="sv-card sv-card--imgright">
             <div class="sv-card-content">
               <!-- <span class="sv-card-tag"><span class="sv-card-tag-dot"></span>Servicio 01</span> -->
-              <h2 class="sv-card-title">Una buena carta es la <em>cara visible</em> de todo lo que ofreces</h2>
+              <h2 class="sv-card-title">Tu portafolio de productos es la <em>cara visible de todo lo que ofreces</em>
+              </h2>
               <div class="sv-card-divider"></div>
               <p class="sv-card-body">
                 Analizamos las tendencias actuales del mercado cafetero y renovamos su portafolio
@@ -66,7 +67,7 @@
                 Analizamos el mercado cafetero y rediseñamos el portafolio de ventas para que cada 
                 producto en carta tenga un propósito claro, sea competitivo y refuerce la imagen del negocio.
               </p> -->
-              <a href="servicios/carta.html" class="sv-card-cta">
+              <a href="our-services.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -111,7 +112,7 @@
                 Evaluamos las necesidades operativas del establecimiento e implementamos soluciones tecnológicas que
                 agilizan la atención, reducen errores y proyectan una imagen más profesional ante el cliente.
               </p> -->
-              <a href="servicios/tecnologia.html" class="sv-card-cta">
+              <a href="technology.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -134,7 +135,7 @@
                 Capacitamos a tu equipo en técnicas de extracción, preparación y servicio al cliente.
                 Formación práctica y estructurada que se refleja directamente en la calidad de cada taza.
               </p>
-              <a href="servicios/capacitacion.html" class="sv-card-cta">
+              <a href="training.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -163,7 +164,7 @@
                 Te orientamos en los requisitos legales, sanitarios y tributarios que debe cumplir
                 el establecimiento. Claridad en cada paso para que operes dentro de la norma.
               </p>
-              <a href="servicios/legal.html" class="sv-card-cta">
+              <a href="legal-advisory.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -186,7 +187,7 @@
                 Desarrollamos estrategias de marketing, gestión de redes sociales y presencia web orientadas a atraer
                 más clientes, comunicar la propuesta de valor del negocio y conectar con las personas.
               </p>
-              <a href="servicios/marketing.html" class="sv-card-cta">
+              <a href="digital-presence.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -195,12 +196,8 @@
                 </svg>
               </a>
             </div>
-            <div class="sv-card-image">
-              <div class="sv-card-image-slot" id="sv-img-05">
-                <!-- SVG servicio 05 irá aquí -->
-                <span class="sv-card-image-num">05</span>
-              </div>
-              <span class="sv-card-image-label">Marketing · pendiente SVG</span>
+            <div class="sv-card-image-slot h-full w-full flex items-center justify-center">
+              <img src="../storage/service5.svg" alt="Carta de café" class="w-full h-full object-fill">
             </div>
           </article>
 
@@ -208,12 +205,8 @@
 
           <!-- ── SERVICIO 06 · imagen izquierda ── -->
           <article class="sv-card sv-card--imgleft">
-            <div class="sv-card-image">
-              <div class="sv-card-image-slot" id="sv-img-06">
-                <!-- SVG servicio 06 irá aquí -->
-                <span class="sv-card-image-num">06</span>
-              </div>
-              <span class="sv-card-image-label">Equipos · pendiente SVG</span>
+            <div class="sv-card-image-slot h-full w-full flex items-center justify-center">
+              <img src="../storage/service6.svg" alt="Carta de café" class="w-full h-full object-fill">
             </div>
             <div class="sv-card-content">
               <!-- <span class="sv-card-tag"><span class="sv-card-tag-dot"></span>Servicio 06</span> -->
@@ -223,7 +216,7 @@
                 Evaluamos tu maquinaria actual y te asesoramos en qué renovar, qué conservar y qué
                 adquirir según el volumen, el estilo y los objetivos de tu negocio.
               </p>
-              <a href="servicios/equipos.html" class="sv-card-cta">
+              <a href="update-machine.html" class="sv-card-cta">
                 Ver servicio completo
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -233,7 +226,6 @@
               </a>
             </div>
           </article>
-
         </div>
       </section>
     </main>

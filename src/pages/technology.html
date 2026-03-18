@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/services_details.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Servicios - Portafolio 3408214</title>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('servicios');
+    </script>
+
+    <main class="service-detail">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">La tecnología adecuada <em>transforma la operación del negocio</em></h1>
+          <p class="hero-subtitle">
+            Identificamos las brechas tecnológicas de tu negocio y acompañamos la implementación de herramientas
+            que optimizan cada punto del servicio, desde el pedido hasta el cobro. Moderniza tu operación y ofrece
+            una experiencia fluida a tus clientes.
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Digitaliza tu cafetería sin complicaciones</h2>
+          <p class="intro-text">
+            En un mundo donde los clientes valoran la rapidez, la comodidad y la transparencia, la tecnología
+            ya no es opcional. Los sistemas digitales reducen errores, aceleran el servicio, facilitan el control
+            financiero y mejoran la experiencia del cliente. Te ayudamos a integrar las soluciones tecnológicas
+            que tu negocio realmente necesita, sin saturarte con herramientas innecesarias.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="services-grid">
+        <div class="container">
+
+          <!-- Service 1: Sistema POS y Facturación -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Terminal POS -->
+                <rect x="25" y="28" width="30" height="24" rx="3" fill="var(--text-h1-color)" />
+                <rect x="28" y="31" width="24" height="16" rx="2" fill="var(--bg-body-color)" />
+                <!-- Pantalla con datos -->
+                <rect x="31" y="35" width="8" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="31" y="39" width="12" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="31" y="43" width="10" height="2" rx="1" fill="var(--text-h2-color)" />
+                <!-- Ticket saliendo -->
+                <rect x="33" y="52" width="14" height="12" rx="1" fill="var(--bg-nav-color)"
+                  stroke="var(--text-h2-color)" stroke-width="1" />
+                <line x1="35" y1="56" x2="45" y2="56" stroke="var(--text-h2-color)" stroke-width="0.8" />
+                <line x1="35" y1="59" x2="43" y2="59" stroke="var(--text-h2-color)" stroke-width="0.8" />
+                <!-- Checkmark -->
+                <circle cx="52" cy="38" r="8" fill="var(--bg-btn-color)" opacity="0.3" />
+                <path d="M 48 38 L 51 41 L 56 35" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Sistema POS y Facturación Electrónica</h3>
+            <h4 class="service-card-subtitle">Control Total de tus Ventas en Tiempo Real</h4>
+            <p class="service-card-description">
+              Implementamos sistemas de punto de venta modernos que registran cada transacción, generan facturas
+              electrónicas automáticamente y te proporcionan reportes detallados para tomar mejores decisiones.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Olvídate de los tickets manuales y las cuentas cuadradas a mano.</strong> Un POS adecuado
+                reduce errores humanos, agiliza el proceso de cobro, cumple con la normativa fiscal y te da visibilidad
+                completa sobre tus ventas, inventario y rendimiento por producto.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Facturación electrónica automática y legal</li>
+              <li>Registro detallado de todas las transacciones</li>
+              <li>Reportes de ventas por producto, turno y periodo</li>
+              <li>Control de inventario integrado</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: Pagos Digitales -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tarjeta de crédito -->
+                <rect x="20" y="32" width="32" height="20" rx="3" fill="var(--text-h1-color)" />
+                <rect x="20" y="32" width="32" height="6" fill="var(--text-h2-color)" />
+                <rect x="24" y="44" width="12" height="3" rx="1" fill="var(--bg-btn-color)" />
+                <!-- Código QR -->
+                <rect x="56" y="30" width="16" height="16" rx="2" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="1.5" />
+                <rect x="58" y="32" width="5" height="5" fill="var(--text-h1-color)" />
+                <rect x="67" y="32" width="3" height="3" fill="var(--text-h1-color)" />
+                <rect x="58" y="39" width="3" height="3" fill="var(--text-h1-color)" />
+                <rect x="65" y="39" width="5" height="5" fill="var(--text-h1-color)" />
+                <!-- Ícono contactless -->
+                <path d="M 30 55 Q 35 60 40 55" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.6" />
+                <path d="M 28 58 Q 35 65 42 58" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.4" />
+                <path d="M 26 61 Q 35 70 44 61" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  opacity="0.2" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Pagos Digitales Multiformato</h3>
+            <h4 class="service-card-subtitle">Acepta Todas las Formas de Pago que tus Clientes Prefieren</h4>
+            <p class="service-card-description">
+              Integramos soluciones de pago con tarjetas, códigos QR, transferencias y billeteras digitales para
+              que nunca pierdas una venta por limitaciones en los métodos de pago.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Los clientes modernos esperan flexibilidad al pagar.</strong> Configuramos terminales de
+                pago por contacto (contactless), códigos QR para pagos instantáneos y links de pago para pedidos
+                anticipados. Más opciones de pago significa más ventas y mejor experiencia.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Terminales para tarjetas con tecnología contactless</li>
+              <li>Pagos por código QR y billeteras digitales</li>
+              <li>Links de pago para pedidos anticipados</li>
+              <li>Conciliación automática de pagos</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: Pantallas de Pedidos -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Monitor de cocina -->
+                <rect x="22" y="25" width="36" height="26" rx="3" fill="var(--text-h1-color)" />
+                <rect x="25" y="28" width="30" height="20" rx="2" fill="var(--bg-body-color)" />
+                <!-- Pedidos en pantalla -->
+                <rect x="28" y="32" width="8" height="4" rx="1" fill="var(--bg-btn-color)" />
+                <rect x="38" y="32" width="8" height="4" rx="1" fill="var(--bg-btn-color)" opacity="0.6" />
+                <rect x="48" y="32" width="5" height="4" rx="1" fill="var(--text-h2-color)" opacity="0.3" />
+                <circle cx="30" cy="40" r="1.5" fill="var(--text-h2-color)" />
+                <rect x="33" y="39" width="8" height="1" rx="0.5" fill="var(--text-h2-color)" />
+                <circle cx="40" cy="43" r="1.5" fill="var(--text-h2-color)" />
+                <rect x="43" y="42" width="6" height="1" rx="0.5" fill="var(--text-h2-color)" />
+                <!-- Base -->
+                <rect x="36" y="51" width="8" height="6" rx="1" fill="var(--text-h2-color)" />
+                <rect x="30" y="57" width="20" height="2" rx="1" fill="var(--text-h1-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Pantallas de Pedidos (KDS)</h3>
+            <h4 class="service-card-subtitle">Sincronización Perfecta entre Barra y Caja</h4>
+            <p class="service-card-description">
+              Instalamos sistemas de visualización de pedidos (Kitchen Display Systems) que muestran en tiempo
+              real qué preparar, en qué orden y con qué prioridad, eliminando papeles y confusiones.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>La comunicación clara es clave en horas pico.</strong> Las pantallas digitales reducen
+                errores de interpretación, organizan automáticamente los pedidos por tiempo de espera y permiten
+                que tu equipo trabaje de manera más coordinada y eficiente.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Visualización clara y ordenada de pedidos activos</li>
+              <li>Sincronización automática con el sistema POS</li>
+              <li>Tiempos de preparación y alertas de prioridad</li>
+              <li>Eliminación de tickets de papel</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: Pedidos con Tablets -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tablet -->
+                <rect x="26" y="20" width="28" height="40" rx="3" fill="var(--text-h1-color)" />
+                <rect x="29" y="25" width="22" height="30" rx="2" fill="var(--bg-body-color)" />
+                <!-- Menú en tablet -->
+                <circle cx="34" cy="32" r="3" fill="var(--bg-btn-color)" opacity="0.4" />
+                <rect x="39" y="30" width="9" height="1.5" rx="0.5" fill="var(--text-h2-color)" />
+                <rect x="39" y="33" width="7" height="1" rx="0.5" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <circle cx="34" cy="41" r="3" fill="var(--bg-btn-color)" opacity="0.4" />
+                <rect x="39" y="39" width="9" height="1.5" rx="0.5" fill="var(--text-h2-color)" />
+                <rect x="39" y="42" width="7" height="1" rx="0.5" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <circle cx="34" cy="50" r="3" fill="var(--bg-btn-color)" opacity="0.4" />
+                <rect x="39" y="48" width="9" height="1.5" rx="0.5" fill="var(--text-h2-color)" />
+                <rect x="39" y="51" width="7" height="1" rx="0.5" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <!-- Botón home -->
+                <circle cx="40" cy="57" r="1.5" fill="var(--text-h2-color)" opacity="0.4" />
+
+                <!-- Mano tocando -->
+                <ellipse cx="52" cy="36" rx="6" ry="8" fill="var(--bg-btn-color)" opacity="0.3"
+                  transform="rotate(-20 52 36)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Toma de Pedidos con Tablets</h3>
+            <h4 class="service-card-subtitle">Agiliza el Servicio y Reduce Errores</h4>
+            <p class="service-card-description">
+              Equipamos a tu personal con tablets para que tomen pedidos directamente en la mesa, enviándolos
+              instantáneamente a la barra y reduciendo tiempos de espera.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>El pedido llega a la barra antes que el mesero.</strong> Esta tecnología elimina idas y
+                venidas innecesarias, reduce errores de transcripción, libera al personal de memorizar pedidos
+                complejos y acelera significativamente el tiempo de servicio.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Tablets configuradas con menú digital completo</li>
+              <li>Transmisión instantánea de pedidos a la barra</li>
+              <li>Reducción de errores y tiempos de espera</li>
+              <li>Capacidad de agregar notas y personalizaciones</li>
+            </ul>
+          </article>
+
+          <!-- Service 5: Menús Digitales y Pedidos Online -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Smartphone con menú -->
+                <rect x="28" y="18" width="24" height="44" rx="4" fill="var(--text-h1-color)" />
+                <rect x="31" y="24" width="18" height="32" rx="2" fill="var(--bg-body-color)" />
+                <circle cx="40" cy="20.5" r="1" fill="var(--bg-body-color)" />
+                <rect x="37" y="58" width="6" height="2" rx="1" fill="var(--bg-body-color)" />
+
+                <!-- Contenido del menú -->
+                <circle cx="36" cy="30" r="4" fill="var(--bg-btn-color)" opacity="0.3" />
+                <rect x="42" y="28" width="5" height="1.5" rx="0.5" fill="var(--text-h2-color)" />
+                <rect x="42" y="31" width="4" height="1" rx="0.5" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <circle cx="36" cy="40" r="4" fill="var(--bg-btn-color)" opacity="0.3" />
+                <rect x="42" y="38" width="5" height="1.5" rx="0.5" fill="var(--text-h2-color)" />
+                <rect x="42" y="41" width="4" height="1" rx="0.5" fill="var(--text-h2-color)" opacity="0.6" />
+
+                <!-- Botón de pedido -->
+                <rect x="33" y="50" width="14" height="4" rx="2" fill="var(--bg-btn-color)" />
+
+                <!-- Código QR al lado -->
+                <rect x="54" y="32" width="14" height="14" rx="2" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="1.5" />
+                <rect x="56" y="34" width="4" height="4" fill="var(--text-h1-color)" />
+                <rect x="64" y="34" width="2" height="2" fill="var(--text-h1-color)" />
+                <rect x="56" y="40" width="2" height="2" fill="var(--text-h1-color)" />
+                <rect x="62" y="40" width="4" height="4" fill="var(--text-h1-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Menús Digitales y Pedidos Online</h3>
+            <h4 class="service-card-subtitle">Los Clientes Ordenan desde su Propio Dispositivo</h4>
+            <p class="service-card-description">
+              Creamos menús digitales accesibles por código QR o web donde los clientes pueden explorar tu oferta,
+              hacer pedidos y pagar desde su celular, sin esperar atención.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Autonomía y comodidad para el cliente.</strong> Los menús digitales permiten que tus clientes
+                vean fotos de los productos, lean descripciones detalladas, personalicen su pedido y lo envíen
+                directamente a la barra. Ideal para reducir contacto y agilizar el servicio en horas concurridas.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Menú digital con fotos y descripciones completas</li>
+              <li>Acceso mediante código QR desde la mesa</li>
+              <li>Pedidos y pagos sin intermediarios</li>
+              <li>Actualización de menú y precios en tiempo real</li>
+            </ul>
+          </article>
+
+          <!-- Service 6: Análisis y Reportes -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dashboard/gráficos -->
+                <rect x="22" y="25" width="36" height="30" rx="3" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="2" />
+
+                <!-- Gráfico de barras -->
+                <rect x="26" y="42" width="4" height="8" fill="var(--bg-btn-color)" opacity="0.4" />
+                <rect x="32" y="38" width="4" height="12" fill="var(--bg-btn-color)" opacity="0.6" />
+                <rect x="38" y="35" width="4" height="15" fill="var(--bg-btn-color)" />
+
+                <!-- Gráfico circular -->
+                <circle cx="51" cy="38" r="8" fill="none" stroke="var(--text-h2-color)" stroke-width="2"
+                  stroke-dasharray="15 35" />
+                <circle cx="51" cy="38" r="8" fill="none" stroke="var(--bg-btn-color)" stroke-width="2"
+                  stroke-dasharray="20 30" transform="rotate(108 51 38)" />
+
+                <!-- Números/KPIs -->
+                <rect x="26" y="28" width="8" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="46" y="28" width="8" height="2" rx="1" fill="var(--text-h2-color)" />
+
+                <!-- Flecha tendencia -->
+                <path d="M 24 58 L 30 54 L 36 56 L 42 50 L 48 52 L 54 46" stroke="var(--bg-btn-color)" stroke-width="2"
+                  fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="54" cy="46" r="2" fill="var(--bg-btn-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Análisis y Reportes Inteligentes</h3>
+            <h4 class="service-card-subtitle">Toma Decisiones Basadas en Datos Reales</h4>
+            <p class="service-card-description">
+              Configuramos dashboards y reportes automáticos que te muestran qué productos se venden más,
+              en qué horarios, cuál es tu ticket promedio y cómo evoluciona tu negocio.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>La información es poder cuando sabes interpretarla.</strong> Te enseñamos a usar los datos
+                que genera tu sistema para identificar oportunidades, ajustar precios, optimizar el menú y planificar
+                promociones estratégicas que aumenten tu rentabilidad.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Reportes de ventas por producto, hora y día</li>
+              <li>Análisis de productos más y menos rentables</li>
+              <li>Seguimiento de ticket promedio y tendencias</li>
+              <li>Dashboards visuales y fáciles de interpretar</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">Beneficios de la <em>transformación digital</em></h2>
+          <div class="why-matters-grid">
+            <div class="matter-card">
+              <h3>Mayor Velocidad de Servicio</h3>
+              <p>
+                Los sistemas digitales eliminan pasos innecesarios y reducen tiempos de espera, permitiéndote
+                atender más clientes sin aumentar tu equipo o comprometer la calidad.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Reducción de Errores</h3>
+              <p>
+                La comunicación digital entre caja, barra y cocina elimina malentendidos, pedidos perdidos y
+                errores de transcripción que generan desperdicio y clientes insatisfechos.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Control Financiero Total</h3>
+              <p>
+                Cada venta registrada, cada pago conciliado, cada gasto documentado. Sabrás exactamente cuánto
+                vendes, qué te cuesta y dónde está tu rentabilidad real.
+              </p>
+            </div>
+            <div class="matter-card">
+              <h3>Experiencia del Cliente Mejorada</h3>
+              <p>
+                Pagos rápidos, pedidos precisos, múltiples opciones de pago y autonomía para ordenar desde el
+                celular. La tecnología hace que tu servicio sea más cómodo y moderno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-title">Moderniza tu operación con tecnología que funciona</h2>
+          <p class="cta-text">
+            No te quedes atrás. Te ayudamos a implementar las soluciones tecnológicas que tu negocio necesita
+            para competir en el mercado actual, sin complicaciones ni inversiones innecesarias.
+          </p>
+          <a href="#contacto" class="btn btn-primary">Solicita una Evaluación Tecnológica</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+
+</html>

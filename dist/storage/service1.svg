@@ -1,71 +1,150 @@
-<svg viewBox="0 0 300 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-    <!-- Gradiente carta -->
-    <linearGradient id="cardGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f0e6dd"/>
-    </linearGradient>
-
-    <!-- Sombra -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-
-  <!-- Fondo -->
-  <rect width="300" height="200" rx="20" fill="#4b3a2f"/>
-
-  <!-- Carta (lado izquierdo) -->
-  <g filter="url(#shadow)">
-    <rect x="30" y="20" width="120" height="160" rx="16" fill="url(#cardGradient)"/>
+<svg viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo transparente -->
+  
+  <!-- Mesa/superficie -->
+  <ellipse cx="300" cy="370" rx="250" ry="28" fill="#e7d5c5" opacity="0.5"/>
+  
+  <!-- Menú/Carta abierta (centro) -->
+  <g transform="translate(300, 200)">
+    <!-- Página izquierda -->
+    <rect x="-140" y="-80" width="130" height="180" rx="4" fill="#f6efe9"/>
+    <rect x="-135" y="-75" width="120" height="170" rx="2" fill="#fff" opacity="0.8"/>
+    
+    <!-- Título de la carta -->
+    <rect x="-125" y="-65" width="80" height="6" rx="2" fill="#4b3a2f"/>
+    <rect x="-125" y="-55" width="60" height="4" rx="1.5" fill="#c8a27a"/>
+    
+    <!-- Ilustración de café -->
+    <circle cx="-75" cy="-25" r="18" fill="#e7d5c5"/>
+    <ellipse cx="-75" cy="-25" rx="14" ry="12" fill="#5a4332"/>
+    <path d="M -85 -25 Q -75 -30 -65 -25" stroke="#f6efe9" stroke-width="2" fill="none"/>
+    
+    <!-- Ítems del menú -->
+    <rect x="-125" y="5" width="100" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="-130" cy="6.5" r="2" fill="#c8a27a"/>
+    <rect x="-35" y="5" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="-125" y="15" width="90" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="-130" cy="16.5" r="2" fill="#c8a27a"/>
+    <rect x="-35" y="15" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="-125" y="25" width="95" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="-130" cy="26.5" r="2" fill="#c8a27a"/>
+    <rect x="-35" y="25" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="-125" y="35" width="85" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="-130" cy="36.5" r="2" fill="#c8a27a"/>
+    <rect x="-35" y="35" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <!-- Sección especial -->
+    <rect x="-125" y="50" width="70" height="5" rx="2" fill="#c8a27a"/>
+    <rect x="-125" y="60" width="80" height="2.5" rx="1" fill="#6b4f3a"/>
+    <rect x="-125" y="67" width="75" height="2.5" rx="1" fill="#6b4f3a"/>
+    
+    <!-- Página derecha -->
+    <rect x="10" y="-80" width="130" height="180" rx="4" fill="#f6efe9"/>
+    <rect x="15" y="-75" width="120" height="170" rx="2" fill="#fff" opacity="0.8"/>
+    
+    <!-- Bebidas especiales -->
+    <rect x="25" y="-65" width="75" height="6" rx="2" fill="#4b3a2f"/>
+    <rect x="25" y="-55" width="55" height="4" rx="1.5" fill="#c8a27a"/>
+    
+    <!-- Ilustraciones de bebidas -->
+    <g transform="translate(60, -20)">
+      <!-- Bebida fría -->
+      <rect x="-8" y="0" width="16" height="25" rx="2" fill="#e7d5c5"/>
+      <ellipse cx="0" cy="0" rx="8" ry="3" fill="#c8a27a"/>
+      <rect x="-6" y="2" width="12" height="20" fill="#5a4332" opacity="0.3"/>
+      <rect x="-2" y="-8" width="4" height="10" fill="#6b4f3a"/>
+      <line x1="-10" y1="10" x2="10" y2="10" stroke="#f6efe9" stroke-width="1.5"/>
+    </g>
+    
+    <g transform="translate(100, -20)">
+      <!-- Bebida caliente -->
+      <ellipse cx="0" cy="0" rx="9" ry="3" fill="#c8a27a"/>
+      <path d="M -9 0 Q -9 15 -5 20 L 5 20 Q 9 15 9 0" fill="#e7d5c5"/>
+      <ellipse cx="0" cy="0" rx="7" ry="2" fill="#5a4332"/>
+      <path d="M -3 -2 Q 0 -5 3 -2" stroke="#f6efe9" stroke-width="1.5" fill="none"/>
+      <path d="M 9 5 Q 14 5 14 10 Q 14 15 9 15" stroke="#c8a27a" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Más ítems -->
+    <rect x="25" y="15" width="95" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="20" cy="16.5" r="2" fill="#c8a27a"/>
+    <rect x="115" y="15" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="25" y="25" width="90" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="20" cy="26.5" r="2" fill="#c8a27a"/>
+    <rect x="115" y="25" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="25" y="35" width="100" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="20" cy="36.5" r="2" fill="#c8a27a"/>
+    <rect x="115" y="35" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <rect x="25" y="45" width="85" height="3" rx="1" fill="#5a4332"/>
+    <circle cx="20" cy="46.5" r="2" fill="#c8a27a"/>
+    <rect x="115" y="45" width="15" height="3" rx="1" fill="#c8a27a"/>
+    
+    <!-- Promoción especial -->
+    <rect x="25" y="60" width="105" height="12" rx="3" fill="#c8a27a" opacity="0.3"/>
+    <rect x="30" y="64" width="60" height="4" rx="1.5" fill="#4b3a2f"/>
   </g>
-
-  <!-- Contenido carta -->
-  <rect x="45" y="40" width="80" height="5" rx="2" fill="#c8a27a"/>
-
-  <rect x="45" y="55" width="60" height="4" rx="2" fill="#d9c2ab"/>
-  <rect x="45" y="65" width="75" height="4" rx="2" fill="#d9c2ab"/>
-  <rect x="45" y="75" width="65" height="4" rx="2" fill="#d9c2ab"/>
-
-  <rect x="45" y="95" width="80" height="4" rx="2" fill="#e7d5c5"/>
-  <rect x="45" y="105" width="50" height="4" rx="2" fill="#e7d5c5"/>
-
-  <!-- Taza (lado derecho, más protagonista) -->
-  <g transform="translate(165,55)">
-
-    <!-- Plato -->
-    <ellipse cx="40" cy="70" rx="45" ry="12" fill="#e7d5c5" opacity="0.5"/>
-
-    <!-- Taza -->
-    <rect x="10" y="25" width="60" height="32" rx="14" fill="#c8a27a"/>
-    <path d="M70 30 C90 30, 90 55, 70 55" stroke="#c8a27a" stroke-width="3" fill="none"/>
-
-    <!-- Café -->
-    <ellipse cx="40" cy="27" rx="22" ry="8" fill="#2b1f19"/>
-
-    <!-- Brillo -->
-    <ellipse cx="30" cy="38" rx="10" ry="5" fill="white" opacity="0.15"/>
-
-    <!-- Vapor animado -->
-    <path stroke="#f6efe9" stroke-width="1.5" fill="none" opacity="0.8">
-      <animate attributeName="d"
-        values="M40 10 C35 0, 55 -5, 48 -15;
-                M40 10 C45 0, 35 -5, 48 -18;
-                M40 10 C35 0, 55 -5, 48 -15"
-        dur="4s"
-        repeatCount="indefinite"/>
-    </path>
-
-    <path stroke="#f6efe9" stroke-width="1.5" fill="none" opacity="0.8">
-      <animate attributeName="d"
-        values="M55 10 C50 0, 70 -5, 63 -15;
-                M55 10 C60 0, 48 -5, 63 -18;
-                M55 10 C50 0, 70 -5, 63 -15"
-        dur="5s"
-        repeatCount="indefinite"/>
-    </path>
-
+  
+  <!-- Iconos de análisis/tendencias (superior) -->
+  <g transform="translate(300, 50)">
+    <!-- Gráfico de tendencias -->
+    <g transform="translate(-120, 0)">
+      <rect x="-28" y="-22" width="56" height="44" rx="4" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+      <path d="M -20 10 L -12 5 L -4 8 L 4 -2 L 12 -5 L 20 -10" stroke="#c8a27a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="-10" r="3" fill="#c8a27a"/>
+      <path d="M -20 -10 L -20 12" stroke="#c8a27a" stroke-width="2" opacity="0.4"/>
+      <path d="M -22 10 L 22 10" stroke="#c8a27a" stroke-width="2" opacity="0.4"/>
+    </g>
+    
+    <!-- Lupa/análisis -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="-3" r="16" fill="none" stroke="#c8a27a" stroke-width="2.5"/>
+      <line x1="12" y1="9" x2="22" y2="19" stroke="#c8a27a" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="0" cy="-3" r="8" fill="none" stroke="#c8a27a" stroke-width="2"/>
+    </g>
+    
+    <!-- Estrella/calidad -->
+    <g transform="translate(120, 0)">
+      <path d="M 0 -18 L 4 -5 L 18 -5 L 7 3 L 11 16 L 0 8 L -11 16 L -7 3 L -18 -5 L -4 -5 Z" fill="none" stroke="#c8a27a" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="0" cy="0" r="4" fill="#c8a27a"/>
+    </g>
   </g>
-
+  
+  <!-- Elementos decorativos - granos de café -->
+  <g transform="translate(80, 240)">
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#4b3a2f" opacity="0.3" transform="rotate(-20 0 0)"/>
+    <path d="M 0 -5 Q 0 0 0 5" stroke="#5a4332" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(520, 260)">
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#5a4332" opacity="0.3" transform="rotate(25 0 0)"/>
+    <path d="M 0 -5 Q 0 0 0 5" stroke="#4b3a2f" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(100, 320)">
+    <ellipse cx="0" cy="0" rx="7" ry="10" fill="#6b4f3a" opacity="0.3" transform="rotate(-15 0 0)"/>
+    <path d="M 0 -4 Q 0 0 0 4" stroke="#5a4332" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(500, 310)">
+    <ellipse cx="0" cy="0" rx="7" ry="10" fill="#4b3a2f" opacity="0.3" transform="rotate(18 0 0)"/>
+    <path d="M 0 -4 Q 0 0 0 4" stroke="#5a4332" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Líneas de conexión estratégica -->
+  <path d="M 180 70 Q 160 130 200 170" stroke="#e7d5c5" stroke-width="2" opacity="0.5" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 300 75 Q 300 110 300 120" stroke="#e7d5c5" stroke-width="2" opacity="0.5" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 420 70 Q 440 130 400 170" stroke="#e7d5c5" stroke-width="2" opacity="0.5" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- Detalles de diseño en la carta -->
+  <g transform="translate(300, 200)">
+    <!-- Detalles dorados en esquinas -->
+    <path d="M -138 -78 L -130 -78 L -138 -70" stroke="#c8a27a" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M 138 -78 L 130 -78 L 138 -70" stroke="#c8a27a" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
 </svg>

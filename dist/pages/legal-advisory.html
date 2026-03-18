@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/services_details.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Asesoria legal - Portafolio 3408214</title>
+    <style>
+      /* ══════════════════════
+     TARGET AUDIENCE GRID
+  ══════════════════════ */
+      .target-audience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .target-item {
+        background: rgba(200, 162, 122, 0.08);
+        border-left: 3px solid var(--bg-btn-color, #c8a27a);
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .target-item:hover {
+        background: rgba(200, 162, 122, 0.12);
+        transform: translateX(4px);
+      }
+
+      .target-item p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        line-height: 1.75;
+        color: var(--text-h2-color, #5a4332);
+        margin: 0;
+      }
+
+      .target-item strong {
+        font-weight: 600;
+        color: var(--text-h1-color, #4b3a2f);
+      }
+
+      @media (max-width: 600px) {
+        .target-audience-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('servicios');
+    </script>
+
+    <main class="service-detail">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">Un negocio en regla opera con <em>más confianza y menos riesgos</em></h1>
+          <p class="hero-subtitle">
+            Te orientamos en los requisitos legales, sanitarios y tributarios que debe cumplir tu establecimiento.
+            Claridad en cada paso para que operes dentro de la norma y construyas un negocio sostenible.
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">¿Tu negocio de café tiene bases sólidas para crecer?</h2>
+          <p class="intro-text">
+            Tener pasión por el café es el primer paso. Tener un negocio estructurado, legal y confiable es lo que
+            lo hace sostenible. Muchos emprendedores inician con un producto excepcional, pero sin claridad sobre
+            cómo formalizar su actividad o qué exigen las normas. Esa incertidumbre puede costar tiempo, dinero y
+            reputación. Nuestro servicio está diseñado para acompañarte en cada paso con orientación clara, práctica
+            y enfocada en la realidad de los negocios de café.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="services-grid">
+        <div class="container">
+
+          <!-- Service 1: Formalización del Negocio -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Documento con sello -->
+                <rect x="25" y="20" width="30" height="40" rx="3" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="2" />
+                <rect x="30" y="27" width="20" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="30" y="33" width="16" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="30" y="39" width="18" height="2" rx="1" fill="var(--text-h2-color)" />
+                <!-- Sello de aprobación -->
+                <circle cx="42" cy="50" r="8" fill="var(--bg-btn-color)" opacity="0.3" />
+                <path d="M 38 50 L 41 53 L 46 47" stroke="var(--bg-btn-color)" stroke-width="2.5" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Formalización y Estructura</h3>
+            <h4 class="service-card-subtitle">Organiza tu Negocio como una Actividad Comercial Legítima</h4>
+            <p class="service-card-description">
+              Te orientamos sobre cómo estructurar tu cafetería como una actividad comercial bien definida,
+              identificando tu modelo de operación y el tipo de actividad económica que corresponde a tu negocio.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Los beneficios de operar dentro del marco legal son concretos.</strong> Acceso a proveedores,
+                alianzas comerciales y una imagen profesional que abre puertas. Te acompañamos en cada paso para que
+                tu negocio tenga fundamentos sólidos desde el inicio.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Identificación del modelo de operación adecuado</li>
+              <li>Definición de actividad económica comercial</li>
+              <li>Orientación sobre estructura organizacional</li>
+              <li>Beneficios y oportunidades de la formalización</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: Registro Mercantil -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Edificio Cámara de Comercio -->
+                <rect x="28" y="25" width="24" height="35" rx="2" fill="var(--text-h1-color)" />
+                <rect x="32" y="22" width="16" height="4" fill="var(--bg-btn-color)" />
+                <!-- Ventanas -->
+                <rect x="32" y="30" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <rect x="43" y="30" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <rect x="32" y="38" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <rect x="43" y="38" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <rect x="32" y="46" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <rect x="43" y="46" width="5" height="5" rx="1" fill="var(--bg-body-color)" />
+                <!-- Puerta -->
+                <rect x="36" y="53" width="8" height="7" rx="1" fill="var(--bg-btn-color)" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Registro en Cámara de Comercio</h3>
+            <h4 class="service-card-subtitle">Tu Respaldo Formal ante el Mercado</h4>
+            <p class="service-card-description">
+              El registro mercantil es tu mecanismo de reconocimiento comercial. Te explicamos el proceso de
+              inscripción, su importancia y cómo mantenerlo actualizado.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Opera con plena legalidad y credibilidad en todo momento.</strong> El registro mercantil
+                no solo es un requisito legal, es tu carta de presentación ante proveedores, clientes y aliados
+                comerciales. Te guiamos paso a paso en este proceso fundamental.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Explicación detallada del proceso de inscripción</li>
+              <li>Documentación necesaria y requisitos</li>
+              <li>Importancia del registro para credibilidad comercial</li>
+              <li>Orientación sobre renovaciones y actualizaciones</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: Requisitos Sanitarios -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Espacio limpio con check -->
+                <rect x="20" y="25" width="40" height="30" rx="3" fill="var(--bg-btn-color)" opacity="0.2" />
+                <rect x="24" y="29" width="32" height="22" rx="2" fill="var(--bg-body-color)"
+                  stroke="var(--text-h1-color)" stroke-width="1.5" />
+                <!-- Elementos de limpieza -->
+                <circle cx="32" cy="38" r="4" fill="var(--text-h2-color)" />
+                <circle cx="48" cy="38" r="4" fill="var(--text-h2-color)" />
+                <rect x="28" y="45" width="24" height="2" rx="1" fill="var(--text-h2-color)" />
+                <!-- Checkmark grande -->
+                <path d="M 32 62 L 37 67 L 48 56" stroke="var(--bg-btn-color)" stroke-width="3" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Requisitos Sanitarios</h3>
+            <h4 class="service-card-subtitle">La Higiene No es Opcional, es un Estándar</h4>
+            <p class="service-card-description">
+              Revisamos las condiciones que debe cumplir tu establecimiento: limpieza, organización de áreas,
+              manejo de equipos, separación de residuos y control de superficies.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Un espacio ordenado comunica profesionalismo.</strong> Te asesoramos en cada aspecto
+                sanitario para que tu cafetería no solo cumpla la norma, sino que transmita confianza y calidad
+                en cada detalle a quienes te visitan.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Evaluación de condiciones del establecimiento</li>
+              <li>Organización adecuada de áreas de trabajo</li>
+              <li>Manejo correcto de utensilios y equipos</li>
+              <li>Sistema de separación de residuos y limpieza</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: Buenas Prácticas de Manufactura -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Manos lavándose -->
+                <ellipse cx="30" cy="45" rx="8" ry="12" fill="var(--bg-btn-color)" opacity="0.3" />
+                <ellipse cx="50" cy="45" rx="8" ry="12" fill="var(--bg-btn-color)" opacity="0.3" />
+                <!-- Gotas de agua -->
+                <circle cx="28" cy="32" r="2" fill="var(--text-h1-color)" />
+                <circle cx="35" cy="30" r="2" fill="var(--text-h1-color)" />
+                <circle cx="45" cy="30" r="2" fill="var(--text-h1-color)" />
+                <circle cx="52" cy="32" r="2" fill="var(--text-h1-color)" />
+                <!-- Escudo de protección -->
+                <path d="M 40 55 L 35 60 L 35 68 Q 35 70 37 71 L 40 73 L 43 71 Q 45 70 45 68 L 45 60 Z"
+                  fill="var(--bg-btn-color)" />
+                <path d="M 37 64 L 39 66 L 43 62" stroke="var(--bg-body-color)" stroke-width="1.5" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Buenas Prácticas de Manufactura (BPM)</h3>
+            <h4 class="service-card-subtitle">Manipulación Segura que Protege a tus Clientes</h4>
+            <p class="service-card-description">
+              Te enseñamos los principios esenciales: higiene personal del manipulador, prevención de
+              contaminación cruzada, correcta conservación de insumos y protocolos de seguridad alimentaria.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Estas prácticas elevan la calidad de tu oferta.</strong> No solo protegen a tus clientes,
+                te preparan para cualquier proceso de inspección o certificación y demuestran tu compromiso con
+                la excelencia en cada preparación.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Higiene personal y presentación del manipulador</li>
+              <li>Técnicas correctas de lavado de manos y sanitización</li>
+              <li>Prevención de contaminación cruzada</li>
+              <li>Conservación adecuada de insumos y materias primas</li>
+            </ul>
+          </article>
+
+          <!-- Service 5: Normatividad Vigente -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Libro de normas -->
+                <rect x="28" y="22" width="24" height="36" rx="2" fill="var(--text-h1-color)" />
+                <rect x="30" y="24" width="20" height="32" rx="1" fill="var(--bg-body-color)" />
+                <rect x="33" y="29" width="14" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="33" y="35" width="14" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="33" y="41" width="10" height="2" rx="1" fill="var(--text-h2-color)" />
+                <rect x="33" y="47" width="12" height="2" rx="1" fill="var(--text-h2-color)" />
+                <!-- Lupa sobre el libro -->
+                <circle cx="50" cy="50" r="8" fill="var(--bg-btn-color)" opacity="0.3" />
+                <circle cx="50" cy="50" r="5" fill="none" stroke="var(--bg-btn-color)" stroke-width="2" />
+                <line x1="54" y1="54" x2="58" y2="58" stroke="var(--bg-btn-color)" stroke-width="2"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Normatividad Vigente</h3>
+            <h4 class="service-card-subtitle">Claridad sobre las Regulaciones que Aplican a tu Negocio</h4>
+            <p class="service-card-description">
+              Te explicamos de manera clara las regulaciones de entidades sanitarias y comerciales que aplican
+              directamente a tu tipo de negocio.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Sabrás qué documentos tener en orden y cómo estar siempre preparado.</strong> Sin sorpresas,
+                sin incertidumbre. Te orientamos sobre qué visitas pueden presentarse, qué requisitos debes cumplir
+                y cómo mantener tu documentación actualizada en todo momento.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Explicación de regulaciones sanitarias aplicables</li>
+              <li>Orientación sobre documentación requerida</li>
+              <li>Preparación para inspecciones y visitas</li>
+              <li>Actualización sobre cambios normativos</li>
+            </ul>
+          </article>
+
+          <!-- Service 6: Imagen y Confianza -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Estrella con rayos (reputación) -->
+                <path d="M 40 20 L 43 33 L 56 33 L 46 41 L 49 54 L 40 46 L 31 54 L 34 41 L 24 33 L 37 33 Z"
+                  fill="var(--bg-btn-color)" opacity="0.3" />
+                <circle cx="40" cy="40" r="12" fill="none" stroke="var(--text-h1-color)" stroke-width="2" />
+                <!-- Checkmarks alrededor -->
+                <path d="M 26 25 L 28 27 L 32 23" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <path d="M 54 25 L 56 27 L 60 23" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <path d="M 26 55 L 28 57 L 32 53" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <path d="M 54 55 L 56 57 L 60 53" stroke="var(--bg-btn-color)" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Imagen, Confianza y Reputación</h3>
+            <h4 class="service-card-subtitle">El Cumplimiento Normativo es una Ventaja Competitiva</h4>
+            <p class="service-card-description">
+              Una cafetería organizada, limpia y operando con estándares claros genera mayor confianza en
+              consumidores, fortalece la relación con proveedores y posiciona tu marca como seria y confiable.
+            </p>
+            <div class="service-card-detail">
+              <p>
+                <strong>Ese nivel de profesionalismo se refleja en cada rincón.</strong> Te acompañamos para que
+                tu operación comunique orden, calidad y compromiso. El cumplimiento no es solo obligación, es la
+                base de tu reputación comercial y tu capacidad de crecimiento.
+              </p>
+            </div>
+            <ul class="service-benefits">
+              <li>Construcción de imagen profesional y confiable</li>
+              <li>Fortalecimiento de relaciones con proveedores</li>
+              <li>Posicionamiento como negocio serio y organizado</li>
+              <li>Preparación para crecimiento y expansión</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Target Audience Section -->
+      <section class="intro-section">
+        <div class="container">
+          <h2 class="section-title">¿Para quién es este servicio?</h2>
+          <div class="target-audience-grid">
+            <div class="target-item">
+              <p><strong>Emprendedores</strong> que están abriendo su primera cafetería y quieren hacerlo bien desde el
+                inicio.</p>
+            </div>
+            <div class="target-item">
+              <p><strong>Negocios establecidos</strong> que llevan tiempo operando y quieren formalizar o reorganizar
+                sus procesos.</p>
+            </div>
+            <div class="target-item">
+              <p><strong>Proyectos de barismo</strong> que buscan crecer con una base legal y sanitaria sólida.</p>
+            </div>
+            <div class="target-item">
+              <p><strong>Cafeterías en expansión</strong> que desean prepararse para inspecciones, certificaciones o
+                crecimiento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-title">Operar con orden es operar con confianza</h2>
+          <p class="cta-text">
+            No esperes a que una inspección o un imprevisto te obliguen a actuar. Con la orientación correcta
+            desde el principio, tu cafetería puede crecer sobre bases sólidas, generando confianza en cada taza.
+          </p>
+          <a href="#contacto" class="btn btn-primary">Demos el Primer Paso Juntos</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+
+</html>

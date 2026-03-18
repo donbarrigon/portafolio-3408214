@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/services_details.css" rel="stylesheet">
     <script type="module" src="../js/main.js"></script>
     <link
@@ -380,11 +381,17 @@
             No te quedes atrás. Te ayudamos a implementar las soluciones tecnológicas que tu negocio necesita
             para competir en el mercado actual, sin complicaciones ni inversiones innecesarias.
           </p>
-          <a href="#contacto" class="btn btn-primary">Solicita una Evaluación Tecnológica</a>
+          <a href="plans.html" class="btn btn-primary">Solicita una Evaluación Tecnológica</a>
         </div>
       </section>
 
     </main>
+    <footer id="footer-placeholder" class="site-footer"></footer>
+
+    <script type="module">
+      import { footerComponent } from '../js/components/footer.js';
+      document.getElementById('footer-placeholder').innerHTML = footerComponent();
+    </script>
   </body>
 
 </html>

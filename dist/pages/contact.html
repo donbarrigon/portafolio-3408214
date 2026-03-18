@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/contact.css" rel="stylesheet">
     <script type="module" src="../js/main.js"></script>
     <link
@@ -330,7 +331,7 @@
                 </svg>
               </div>
               <p class="ct-map-label">Bello, Antioquia</p>
-              <p>Aqui va el iframe de Google Maps</p>
+              <p>Aqui voy un iframe de Google Maps donde se vea nuestra ubicacion</p>
             </div>
           </div>
         </section>
@@ -495,6 +496,12 @@
         }
       </script>
     </main>
+    <footer id="footer-placeholder" class="site-footer"></footer>
+
+    <script type="module">
+      import { footerComponent } from '../js/components/footer.js';
+      document.getElementById('footer-placeholder').innerHTML = footerComponent();
+    </script>
   </body>
 
 </html>

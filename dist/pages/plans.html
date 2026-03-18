@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/plans.css" rel="stylesheet">
     <script type="module" src="../js/main.js"></script>
     <link
@@ -119,7 +120,7 @@
               </div>
 
               <div class="pricing-card-footer">
-                <a href="#contacto" class="pricing-btn pricing-btn--outline">Agendar Consulta</a>
+                <a href="contact.html" class="pricing-btn pricing-btn--outline">Agendar Consulta</a>
               </div>
             </article>
 
@@ -208,7 +209,7 @@
               </div>
 
               <div class="pricing-card-footer">
-                <a href="#contacto" class="pricing-btn pricing-btn--primary">Solicitar Información</a>
+                <a href="contact.html" class="pricing-btn pricing-btn--primary">Solicitar Información</a>
               </div>
             </article>
 
@@ -274,7 +275,7 @@
               <p class="pricing-service-description">
                 Formación profesional en técnicas de preparación, manejo de equipos y servicio al cliente.
               </p>
-              <a href="barista-training.html" class="pricing-service-link">
+              <a href="training.html" class="pricing-service-link">
                 Ver detalles
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 3 L11 8 L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -326,7 +327,7 @@
               <p class="pricing-service-description">
                 Evaluación y asesoría sobre maquinaria para decisiones estratégicas de inversión.
               </p>
-              <a href="equipment-optimization.html" class="pricing-service-link">
+              <a href="update-machine.html" class="pricing-service-link">
                 Ver detalles
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 3 L11 8 L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -351,7 +352,7 @@
               <p class="pricing-service-description">
                 Sistemas POS, pagos digitales, pantallas de pedidos y herramientas de gestión moderna.
               </p>
-              <a href="technology-implementation.html" class="pricing-service-link">
+              <a href="technology.html" class="pricing-service-link">
                 Ver detalles
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 3 L11 8 L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -379,7 +380,7 @@
               <p class="pricing-service-description">
                 Análisis de tendencias y desarrollo de productos competitivos y rentables.
               </p>
-              <a href="portfolio-development.html" class="pricing-service-link">
+              <a href="our-services.html" class="pricing-service-link">
                 Ver detalles
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 3 L11 8 L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -401,7 +402,7 @@
               Agenda una consulta gratuita y te ayudamos a identificar exactamente qué necesita tu cafetería
               para alcanzar el siguiente nivel.
             </p>
-            <a href="#contacto" class="pricing-cta-btn">
+            <a href="contact.html" class="pricing-cta-btn">
               Agendar Consulta Gratuita
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 10 L16 10 M16 10 L10 4 M16 10 L10 16" stroke="currentColor" stroke-width="2"
@@ -413,6 +414,12 @@
       </section>
 
     </main>
+    <footer id="footer-placeholder" class="site-footer"></footer>
+
+    <script type="module">
+      import { footerComponent } from '../js/components/footer.js';
+      document.getElementById('footer-placeholder').innerHTML = footerComponent();
+    </script>
   </body>
 
 </html>

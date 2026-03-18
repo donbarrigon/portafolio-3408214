@@ -1,0 +1,71 @@
+<svg viewBox="0 0 300 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Gradiente carta -->
+    <linearGradient id="cardGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0e6dd"/>
+    </linearGradient>
+
+    <!-- Sombra -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="300" height="200" rx="20" fill="#4b3a2f"/>
+
+  <!-- Carta (lado izquierdo) -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="20" width="120" height="160" rx="16" fill="url(#cardGradient)"/>
+  </g>
+
+  <!-- Contenido carta -->
+  <rect x="45" y="40" width="80" height="5" rx="2" fill="#c8a27a"/>
+
+  <rect x="45" y="55" width="60" height="4" rx="2" fill="#d9c2ab"/>
+  <rect x="45" y="65" width="75" height="4" rx="2" fill="#d9c2ab"/>
+  <rect x="45" y="75" width="65" height="4" rx="2" fill="#d9c2ab"/>
+
+  <rect x="45" y="95" width="80" height="4" rx="2" fill="#e7d5c5"/>
+  <rect x="45" y="105" width="50" height="4" rx="2" fill="#e7d5c5"/>
+
+  <!-- Taza (lado derecho, más protagonista) -->
+  <g transform="translate(165,55)">
+
+    <!-- Plato -->
+    <ellipse cx="40" cy="70" rx="45" ry="12" fill="#e7d5c5" opacity="0.5"/>
+
+    <!-- Taza -->
+    <rect x="10" y="25" width="60" height="32" rx="14" fill="#c8a27a"/>
+    <path d="M70 30 C90 30, 90 55, 70 55" stroke="#c8a27a" stroke-width="3" fill="none"/>
+
+    <!-- Café -->
+    <ellipse cx="40" cy="27" rx="22" ry="8" fill="#2b1f19"/>
+
+    <!-- Brillo -->
+    <ellipse cx="30" cy="38" rx="10" ry="5" fill="white" opacity="0.15"/>
+
+    <!-- Vapor animado -->
+    <path stroke="#f6efe9" stroke-width="1.5" fill="none" opacity="0.8">
+      <animate attributeName="d"
+        values="M40 10 C35 0, 55 -5, 48 -15;
+                M40 10 C45 0, 35 -5, 48 -18;
+                M40 10 C35 0, 55 -5, 48 -15"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <path stroke="#f6efe9" stroke-width="1.5" fill="none" opacity="0.8">
+      <animate attributeName="d"
+        values="M55 10 C50 0, 70 -5, 63 -15;
+                M55 10 C60 0, 48 -5, 63 -18;
+                M55 10 C50 0, 70 -5, 63 -15"
+        dur="5s"
+        repeatCount="indefinite"/>
+    </path>
+
+  </g>
+
+</svg>

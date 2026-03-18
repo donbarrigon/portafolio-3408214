@@ -108,6 +108,7 @@ if (isWatch) {
 
     watch("src/pages", { recursive: true }, () => {
         cpSync("src/pages", "dist/pages", { recursive: true });
+        cpSync("src/storage", "dist/storage", { recursive: true });
         console.log("📄 Pages actualizadas");
     });
 

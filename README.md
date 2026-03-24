@@ -13,6 +13,18 @@ Feel free to explore the code, learn from it, and use it however you like.
 bun install
 ```
 
+## Run dev Mode:
+
+```bash
+bun run dev
+```
+
+## Build:
+
+```bash
+bun run build
+```
+
 ## To run:
 
 Open your favorite file explorer and run the file:

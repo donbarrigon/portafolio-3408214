@@ -1,0 +1,78 @@
+<svg viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo transparente -->
+  
+  <!-- Mesa/superficie -->
+  <ellipse cx="300" cy="370" rx="240" ry="28" fill="#e7d5c5" opacity="0.5"/>
+  
+  <!-- Máquina de espresso antigua/desgastada (izquierda) -->
+  <g opacity="0.5">
+    <rect x="60" y="200" width="100" height="130" rx="6" fill="#5a4332"/>
+    <rect x="68" y="208" width="84" height="20" rx="3" fill="#6b4f3a"/>
+    <circle cx="110" cy="260" r="28" fill="#4b3a2f"/>
+    <circle cx="110" cy="260" r="22" fill="#6b4f3a"/>
+    <rect x="98" y="288" width="24" height="6" rx="2" fill="#6b4f3a"/>
+    <rect x="88" y="294" width="44" height="20" rx="4" fill="#5a4332"/>
+    <path d="M 75 215 L 85 225" stroke="#4b3a2f" stroke-width="2" opacity="0.6"/>
+    <circle cx="130" cy="240" r="3" fill="#4b3a2f"/>
+  </g>
+  
+  <!-- Flecha de evaluación/análisis -->
+  <g transform="translate(175, 260)">
+    <path d="M 0 0 L 25 0" stroke="#c8a27a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 20 -5 L 25 0 L 20 5" fill="#c8a27a"/>
+    <circle cx="12" cy="-12" r="8" fill="none" stroke="#c8a27a" stroke-width="2"/>
+    <path d="M 8 -12 L 11 -9 L 16 -15" stroke="#c8a27a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Máquina moderna -->
+  <g transform="translate(240, 180)">
+    <rect x="0" y="0" width="140" height="160" rx="8" fill="#4b3a2f"/>
+    <rect x="10" y="10" width="120" height="30" rx="5" fill="#c8a27a"/>
+    <rect x="15" y="15" width="50" height="20" rx="3" fill="#5a4332"/>
+    <circle cx="25" cy="25" r="2" fill="#c8a27a"/>
+    <rect x="30" y="23" width="25" height="2" fill="#c8a27a"/>
+    <rect x="30" y="27" width="20" height="2" fill="#c8a27a"/>
+    
+    <circle cx="45" cy="75" r="32" fill="#5a4332"/>
+    <circle cx="45" cy="75" r="26" fill="#c8a27a"/>
+    <circle cx="45" cy="75" r="10" fill="#4b3a2f"/>
+    
+    <circle cx="95" cy="75" r="32" fill="#5a4332"/>
+    <circle cx="95" cy="75" r="26" fill="#c8a27a"/>
+    <circle cx="95" cy="75" r="10" fill="#4b3a2f"/>
+    
+    <rect x="115" y="50" width="12" height="50" rx="6" fill="#c8a27a"/>
+    <circle cx="121" cy="48" r="5" fill="#5a4332"/>
+    
+    <rect x="25" y="110" width="40" height="8" rx="3" fill="#c8a27a"/>
+    <rect x="75" y="110" width="40" height="8" rx="3" fill="#c8a27a"/>
+    <rect x="10" y="118" width="120" height="30" rx="6" fill="#5a4332"/>
+    <rect x="15" y="123" width="110" height="20" rx="4" fill="#6b4f3a"/>
+    
+    <circle cx="70" cy="25" r="3" fill="#f6efe9" opacity="0.6"/>
+    <rect x="80" y="17" width="35" height="3" rx="1.5" fill="#5a4332"/>
+    <rect x="80" y="23" width="30" height="3" rx="1.5" fill="#5a4332"/>
+    <rect x="80" y="29" width="25" height="3" rx="1.5" fill="#5a4332"/>
+  </g>
+  
+  <!-- Molinillo -->
+  <g transform="translate(430, 210)">
+    <rect x="0" y="0" width="90" height="110" rx="6" fill="#4b3a2f"/>
+    <rect x="8" y="8" width="74" height="25" rx="4" fill="#c8a27a"/>
+    <circle cx="45" cy="20" r="6" fill="#5a4332"/>
+    
+    <path d="M 15 33 L 10 65 L 80 65 L 75 33 Z" fill="#e7d5c5" opacity="0.4"/>
+    <ellipse cx="45" cy="33" rx="30" ry="8" fill="#e7d5c5" opacity="0.5"/>
+    
+    <ellipse cx="35" cy="45" rx="5" ry="7" fill="#5a4332" transform="rotate(-15 35 45)"/>
+    <ellipse cx="50" cy="48" rx="5" ry="7" fill="#4b3a2f" transform="rotate(20 50 48)"/>
+    <ellipse cx="42" cy="55" rx="5" ry="7" fill="#6b4f3a" transform="rotate(-10 42 55)"/>
+    
+    <rect x="10" y="65" width="70" height="35" rx="4" fill="#5a4332"/>
+    <rect x="18" y="72" width="54" height="8" rx="2" fill="#c8a27a"/>
+    
+    <rect x="30" y="100" width="30" height="5" rx="2" fill="#4b3a2f"/>
+    <ellipse cx="45" cy="107" rx="15" ry="6" fill="#4b3a2f"/>
+  </g>
+
+</svg>

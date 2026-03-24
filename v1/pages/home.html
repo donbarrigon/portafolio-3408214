@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Inicio - Portafolio 3408214</title>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('inicio');
+    </script>
+
+    <main class="w-full">
+
+      <!-- ══════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════ -->
+      <section class="min-h-screen max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch py-0 px-0 overflow-hidden">
+
+        <!-- ── COLUMNA IZQUIERDA: Texto ── -->
+        <div class="flex-1 flex flex-col justify-center px-10 sm:px-14 py-20 gap-8">
+
+          <!-- Badge -->
+          <div
+            class="anim-1 flex items-center gap-2 w-fit px-4 py-1.5 rounded-full border text-xs font-medium tracking-widest uppercase"
+            style="background: var(--bg-nav-color); border-color: var(--bg-btn-color); color: var(--text-nav-color);">
+            <span class="dot-pulse w-2 h-2 rounded-full inline-block flex-shrink-0"
+              style="background: var(--bg-btn-color);"></span>
+            Aprendices SENA · Barismo &amp; Café
+          </div>
+
+          <!-- Titular -->
+          <div class="anim-2">
+            <h1 class="font-display text-5xl sm:text-6xl leading-tight font-semibold"
+              style="color: var(--text-h1-color);">
+              Tu cafetería,<br>
+              <em class="font-display italic font-normal" style="color: var(--bg-btn-color);">rediseñada</em><br>
+              desde adentro.
+            </h1>
+          </div>
+
+          <!-- Descripción -->
+          <p class="anim-3 text-base font-light leading-relaxed max-w-md" style="color: var(--text-h3-color);">
+            Somos un equipo de aprendices del SENA especializados en fortalecer negocios de café y barismo.
+            Analizamos tu operación, identificamos lo que está frenando tu crecimiento y te entregamos
+            un plan claro que puedes aplicar desde mañana.
+          </p>
+
+          <!-- Botones CTA -->
+          <div class="anim-4 flex items-center gap-5 flex-wrap">
+            <a href="#"
+              class="px-7 py-3 rounded-full text-sm font-medium transition-all duration-200 hover:opacity-90 hover:scale-[1.02] active:scale-95"
+              style="background: var(--text-body-color); color: var(--bg-body-color);">
+              Ver cómo funciona →
+            </a>
+            <a href="#"
+              class="text-sm font-medium underline underline-offset-4 transition-opacity duration-200 hover:opacity-60"
+              style="color: var(--text-h3-color);">
+              Ver casos reales
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="anim-5 flex gap-8 pt-6 border-t" style="border-color: var(--bg-nav-color);">
+            <div class="flex flex-col gap-1">
+              <span class="text-2xl font-medium" style="color: var(--text-h1-color);">3</span>
+              <span class="text-xs tracking-wide" style="color: var(--text-h3-color);">Áreas de
+                diagnóstico</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-2xl font-medium" style="color: var(--text-h1-color);">72 hrs</span>
+              <span class="text-xs tracking-wide" style="color: var(--text-h3-color);">Para tu
+                propuesta</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-2xl font-medium" style="color: var(--text-h1-color);">SENA</span>
+              <span class="text-xs tracking-wide" style="color: var(--text-h3-color);">Respaldo
+                institucional</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── COLUMNA DERECHA: Panel ilustrativo ── -->
+        <div class="anim-panel relative hidden lg:flex flex-col items-center justify-center w-[46%] flex-shrink-0"
+          style="background: var(--text-body-color);">
+
+          <!-- Borde diagonal izquierdo -->
+          <div class="hero-panel absolute inset-0 pointer-events-none"></div>
+
+          <!-- SVG ilustrativo -->
+          <svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg"
+            class="relative z-10 w-72 xl:w-80 drop-shadow-xl">
+
+            <!-- Sombra taza -->
+            <ellipse cx="200" cy="420" rx="110" ry="16" fill="#3a2a1f" opacity="0.5" />
+
+            <!-- Plato -->
+            <ellipse cx="200" cy="400" rx="130" ry="18" fill="#6b4f3a" />
+            <ellipse cx="200" cy="396" rx="118" ry="13" fill="#c8a27a" />
+
+            <!-- Cuerpo taza -->
+            <path d="M110 260 Q108 400 200 406 Q292 400 290 260 Z" fill="#e7d5c5" />
+            <!-- Interior taza -->
+            <ellipse cx="200" cy="260" rx="90" ry="22" fill="#c8a27a" />
+            <!-- Café líquido -->
+            <ellipse cx="200" cy="260" rx="82" ry="18" fill="#4b3a2f" />
+            <!-- Reflejo café -->
+            <ellipse cx="185" cy="256" rx="28" ry="8" fill="#6b4f3a" opacity="0.5" />
+
+            <!-- Asa taza -->
+            <path d="M290 295 Q335 295 338 340 Q340 380 290 382" fill="none" stroke="#e7d5c5" stroke-width="22"
+              stroke-linecap="round" />
+            <path d="M290 295 Q330 295 333 340 Q335 378 290 380" fill="none" stroke="#c8a27a" stroke-width="8"
+              stroke-linecap="round" />
+
+            <!-- Vapor 1 -->
+            <path class="steam" d="M172 240 Q168 215 174 195" fill="none" stroke="#c8a27a" stroke-width="2.5"
+              stroke-linecap="round" stroke-dasharray="5 7" opacity="0.5" transform-origin="172 240" />
+            <!-- Vapor 2 -->
+            <path class="steam-2" d="M200 237 Q196 212 202 190" fill="none" stroke="#c8a27a" stroke-width="2.5"
+              stroke-linecap="round" stroke-dasharray="5 7" opacity="0.4" transform-origin="200 237" />
+            <!-- Vapor 3 -->
+            <path class="steam-3" d="M228 240 Q224 215 230 195" fill="none" stroke="#c8a27a" stroke-width="2.5"
+              stroke-linecap="round" stroke-dasharray="5 7" opacity="0.5" transform-origin="228 240" />
+
+            <!-- Decoración fondo: círculos -->
+            <circle cx="80" cy="140" r="48" fill="#6b4f3a" opacity="0.12" />
+            <circle cx="340" cy="340" r="60" fill="#c8a27a" opacity="0.08" />
+            <circle cx="330" cy="120" r="28" fill="#c8a27a" opacity="0.1" />
+
+            <!-- Texto decorativo -->
+            <text x="200" y="70" text-anchor="middle" font-family="'Playfair Display', serif" font-size="13"
+              fill="#c8a27a" opacity="0.6" letter-spacing="4">BARISMO · SENA</text>
+            <line x1="110" y1="80" x2="290" y2="80" stroke="#c8a27a" stroke-width="0.5" opacity="0.3" />
+          </svg>
+
+          <!-- Tarjeta flotante 1: Diagnóstico gratis -->
+          <div class="float-card float-card-1 absolute bottom-[22%] left-4 z-20 px-4 py-3 rounded-2xl border"
+            style="background: rgba(75,58,47,0.9); border-color: rgba(200,162,122,0.3); backdrop-filter: blur(6px);">
+            <p class="text-xs tracking-widest uppercase mb-1" style="color: var(--bg-btn-color);">
+              Diagnóstico inicial</p>
+            <p class="text-lg font-medium" style="color: var(--bg-body-color);">Sin costo</p>
+            <p class="text-xs mt-0.5" style="color: var(--bg-nav-color);">Primera sesión gratuita</p>
+          </div>
+
+          <!-- Tarjeta flotante 2: Tiempo de entrega -->
+          <div class="float-card float-card-2 absolute top-[16%] right-4 z-20 px-4 py-3 rounded-2xl border"
+            style="background: rgba(75,58,47,0.9); border-color: rgba(200,162,122,0.3); backdrop-filter: blur(6px);">
+            <p class="text-xs tracking-widest uppercase mb-1" style="color: var(--bg-btn-color);">Propuesta
+              lista en</p>
+            <p class="text-lg font-medium" style="color: var(--bg-body-color);">72 horas</p>
+            <p class="text-xs mt-0.5" style="color: var(--bg-nav-color);">Plan de acción concreto</p>
+          </div>
+
+          <!-- Nota imagen -->
+          <p class="absolute bottom-4 left-0 right-0 text-center text-xs z-20 opacity-40"
+            style="color: var(--bg-nav-color);">
+            [ Si quieres, puedo hacer un mapeo completo de tus servicios <br>
+            y te entregue un plan de acción concreto. ]
+          </p>
+        </div>
+
+      </section>
+    </main>
+    <footer id="footer-placeholder" class="site-footer"></footer>
+
+    <script type="module">
+      import { footerComponent } from '../js/components/footer.js';
+      document.getElementById('footer-placeholder').innerHTML = footerComponent();
+    </script>
+  </body>
+
+</html>

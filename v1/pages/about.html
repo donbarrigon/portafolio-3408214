@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/about.css" rel="stylesheet">
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Nuestro grupo - Portafolio 3408214</title>
+  </head>
+
+  <body>
+    <header id="header-placeholder" class="site-header w-full"></header>
+
+    <script type="module">
+      import { headerComponent } from '../js/components/header.js';
+      document.getElementById('header-placeholder').innerHTML = headerComponent('quienes somos');
+    </script>
+
+    <main class="w-full">
+      <!--
+  ══════════════════════════════════════════
+  PÁGINA: Quiénes somos
+  Secciones: Hero intro + Cards misión/visión + Card objetivos
+  ══════════════════════════════════════════
+-->
+
+      <!-- 
+══════════════════════════════════════
+     HERO
+══════════════════════════════════════ 
+-->
+      <section class="qs-hero">
+
+        <!-- Decoración SVG fondo -->
+        <div class="qs-hero-deco">
+          <svg width="100%" height="100%" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="980" cy="120" r="260" fill="#c8a27a" opacity="0.04" />
+            <circle cx="1100" cy="600" r="180" fill="#c8a27a" opacity="0.05" />
+            <circle cx="60" cy="580" r="200" fill="#c8a27a" opacity="0.04" />
+            <!-- Taza decorativa esquina derecha -->
+            <g transform="translate(860, 180) scale(1.6)" opacity="0.06">
+              <ellipse cx="60" cy="130" rx="42" ry="8" fill="#c8a27a" />
+              <path d="M22 65 Q21 128 60 134 Q99 128 98 65 Z" fill="#e7d5c5" />
+              <ellipse cx="60" cy="65" rx="38" ry="9" fill="#c8a27a" />
+              <ellipse cx="60" cy="65" rx="30" ry="6" fill="#4b3a2f" />
+              <path d="M98 74 Q114 74 115 90 Q116 106 98 107" fill="none" stroke="#e7d5c5" stroke-width="10"
+                stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="qs-hero-inner">
+
+          <!-- Texto -->
+          <div class="qs-hero-left">
+            <div class="qs-anim-1">
+              <span class="qs-hero-badge">
+                <span class="qs-hero-badge-dot"></span>
+                Aprendices SENA · Ficha 3408214
+              </span>
+            </div>
+
+            <div class="qs-anim-2">
+              <h1 class="qs-hero-title">
+                Café con <em>propósito,</em><br>
+                servicio con<br>
+                <em>conocimiento.</em>
+              </h1>
+            </div>
+
+            <div class="qs-anim-3">
+              <div class="qs-hero-divider"></div>
+            </div>
+
+            <div class="qs-anim-4">
+              <p class="qs-hero-lead">
+                El sector cafetero en Antioquia ha evolucionado hacia experiencias más completas
+                donde no solo importa la calidad del café, sino también el servicio, la innovación
+                y la conexión con los clientes. Como estudiantes del SENA en formación en barismo,
+                acompañamos a cafeterías en el fortalecimiento de sus procesos mediante capacitación,
+                asesoría y herramientas que elevan cada taza y cada visita.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cita + stats -->
+          <div class="qs-hero-right qs-anim-4">
+            <div class="qs-hero-quote">
+              <p>
+                "Contribuimos al crecimiento y posicionamiento de las cafeterías en un mercado
+                cada vez más competitivo, desde la formación hasta la estrategia."
+              </p>
+            </div>
+            <div class="qs-hero-quote">
+              <p>
+                Ofrecemos acompañamiento en áreas clave como formación en barismo y servicio al
+                cliente, actualización o creación de cartas, estrategias de marketing, uso de herramientas tecnológicas
+                y orientación para la localización y proyección del negocio.
+              </p>
+            </div>
+
+            <!-- <div class="qs-hero-stats">
+              <div class="qs-hero-stat">
+                <span class="qs-hero-stat-num">5</span>
+                <span class="qs-hero-stat-label">Áreas de trabajo</span>
+              </div>
+              <div class="qs-hero-stat">
+                <span class="qs-hero-stat-num">2028</span>
+                <span class="qs-hero-stat-label">Visión al</span>
+              </div>
+              <div class="qs-hero-stat">
+                <span class="qs-hero-stat-num">SENA</span>
+                <span class="qs-hero-stat-label">Respaldo</span>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+
+        <!-- Fade hacia el body -->
+        <div class="qs-hero-fade"></div>
+      </section>
+
+
+      <!-- 
+══════════════════════════════════════
+     CARDS: Misión · Visión · Objetivos
+══════════════════════════════════════ 
+      -->
+      <section class="qs-cards-section">
+
+        <!-- Misión + Visión -->
+        <div class="qs-mv-grid">
+
+          <!-- Misión -->
+          <div class="qs-card qs-card--dark">
+            <span class="qs-card-eyebrow qs-card-eyebrow--on-dark">Nuestra misión</span>
+            <h2 class="qs-card-title qs-card-title--on-dark">
+              Lo que nos <em>mueve</em> cada día
+            </h2>
+            <div class="qs-card-divider qs-card-divider--on-dark"></div>
+            <p class="qs-card-body qs-card-body--on-dark">
+              Brindamos asesoría y capacitación a cafeterías para mejorar la calidad del servicio,
+              el conocimiento en barismo y la gestión del negocio. Lo hacemos mediante estrategias
+              innovadoras, herramientas tecnológicas y acompañamiento profesional que fortalecen
+              la experiencia del cliente y el crecimiento del sector cafetero.
+            </p>
+          </div>
+
+          <!-- Visión -->
+          <div class="qs-card qs-card--light">
+            <span class="qs-card-eyebrow qs-card-eyebrow--on-light">Nuestra visión</span>
+            <h2 class="qs-card-title qs-card-title--on-light">
+              Hacia dónde <em>vamos</em>
+            </h2>
+            <div class="qs-card-divider qs-card-divider--on-light"></div>
+            <p class="qs-card-body qs-card-body--on-light">
+              Para el 2028 queremos ser un grupo de referencia en asesoría y capacitación para cafeterías,
+              reconocido por impulsar negocios cafeteros más innovadores, competitivos y orientados
+              a la excelencia en el servicio y la cultura del café.
+            </p>
+            <span class="qs-vision-year">2028</span>
+          </div>
+
+        </div>
+
+        <!-- Objetivos -->
+        <div class="qs-card qs-card--full">
+          <div>
+            <span class="qs-card-eyebrow qs-card-eyebrow--on-body">Objetivos</span>
+          </div>
+
+          <div class="qs-obj-grid">
+
+            <!-- General -->
+            <div class="qs-obj-general">
+              <span class="qs-obj-sub-label">General</span>
+              <p class="qs-obj-general-text">
+                Fortalecer el desempeño y la competitividad de las cafeterías mediante capacitación
+                en barismo, asesoramiento en servicio, estrategias de mercado y la implementación
+                de herramientas que optimicen su funcionamiento y la experiencia del cliente.
+              </p>
+            </div>
+
+            <!-- Específicos -->
+            <div class="qs-obj-specifics">
+              <span class="qs-obj-sub-label">Específicos</span>
+              <ul class="qs-obj-list">
+                <li>
+                  <span class="qs-obj-bullet"></span>
+                  <span>
+                    Identificar las principales falencias en servicio, carta y comunicación de las
+                    cafeterías para proponer soluciones prácticas que mejoren su funcionamiento.
+                  </span>
+                </li>
+                <li>
+                  <span class="qs-obj-bullet"></span>
+                  <span>
+                    Diseñar estrategias de marketing, actualización de cartas e implementación de
+                    herramientas tecnológicas que ayuden a atraer más clientes y mejorar la gestión
+                    del negocio.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer id="footer-placeholder" class="site-footer"></footer>
+
+    <script type="module">
+      import { footerComponent } from '../js/components/footer.js';
+      document.getElementById('footer-placeholder').innerHTML = footerComponent();
+    </script>
+  </body>
+
+</html>

@@ -66,18 +66,18 @@ export const footerSections: FooterSection[] = [
   {
     title: 'Recursos',
     links: [
-      { label: 'Blog de Barismo', href: 'blog.html' },
-      { label: 'Guías Gratuitas', href: 'resources.html' },
-      { label: 'Casos de Éxito', href: 'cases.html' },
-      { label: 'Testimonios', href: 'testimonials.html' }
+      { label: 'Blog de Barismo', href: 'contact.html' },
+      { label: 'Guías Gratuitas', href: 'contact.html' },
+      { label: 'Casos de Éxito', href: 'contact.html' },
+      { label: 'Testimonios', href: 'contact.html' }
     ]
   },
   {
     title: 'Legal',
     links: [
-      { label: 'Política de Privacidad', href: 'privacy.html' },
-      { label: 'Términos de Servicio', href: 'terms.html' },
-      { label: 'Aviso Legal', href: 'legal.html' }
+      { label: 'Política de Privacidad', href: 'contact.html' },
+      { label: 'Términos de Servicio', href: 'contact.html' },
+      { label: 'Aviso Legal', href: 'contact.html' }
     ]
   }
 ];
@@ -126,19 +126,22 @@ export function footerComponent(): string {
     <footer class="site-footer">
       
       <!-- Decoración superior -->
+      <!--
       <div class="footer-deco-top">
         <svg class="footer-deco-svg" viewBox="0 0 1200 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path d="M0 40 Q 300 10, 600 40 T 1200 40 L 1200 80 L 0 80 Z" fill="var(--text-body-color, #4b3a2f)" opacity="0.1"/>
           <path d="M0 50 Q 300 20, 600 50 T 1200 50 L 1200 80 L 0 80 Z" fill="var(--text-body-color, #4b3a2f)" opacity="0.15"/>
         </svg>
-      </div>
+      </div>-->
 
       <div class="footer-container">
         
         <!-- ── Top section: Brand + Newsletter ── -->
+        <!--
         <div class="footer-top">
-          
+        -->
           <!-- Brand -->
+          <!--
           <div class="footer-brand">
             <div class="footer-brand-logo">
               <svg width="40" height="40" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +162,10 @@ export function footerComponent(): string {
               </p>
             </div>
           </div>
+          -->
 
           <!-- Newsletter/CTA -->
+          <!--
           <div class="footer-cta">
             <h3 class="footer-cta-title">¿Listo para transformar tu cafetería?</h3>
             <p class="footer-cta-text">
@@ -173,8 +178,10 @@ export function footerComponent(): string {
               </svg>
             </a>
           </div>
-
+          -->
+<!--
         </div>
+        -->
 
         <!-- ── Middle section: Links grid ── -->
         <div class="footer-middle">

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── Keyframes ── */
+@keyframes svFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Sección wrapper ── */
+.sv-section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 5rem 2rem 6rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Encabezado de sección ── */
+.sv-header {
+  text-align: center;
+  max-width: 52ch;
+  margin: 0 auto 5rem;
+  animation: svFadeUp 0.75s ease both;
+}
+
+.sv-header-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.63rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--bg-btn-color, #c8a27a);
+  background: rgba(200, 162, 122, 0.1);
+  border: 1px solid rgba(200, 162, 122, 0.28);
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 1.25rem;
+}
+
+.sv-header-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--bg-btn-color, #c8a27a);
+  flex-shrink: 0;
+}
+
+.sv-header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-h1-color, #4b3a2f);
+  margin-bottom: 1rem;
+}
+
+.sv-header-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-h3-color, #6b4f3a);
+}
+
+.sv-header-divider {
+  width: 36px;
+  height: 2px;
+  background: var(--bg-btn-color, #c8a27a);
+  border-radius: 2px;
+  opacity: 0.55;
+  margin: 0 auto 1.25rem;
+}
+
+.sv-header-sub {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--text-h3-color, #6b4f3a);
+}
+
+/* ── Lista de cards ── */
+.sv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Separador entre cards ── */
+.sv-separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(200, 162, 122, 0.18);
+}
+
+/* ── Card base ── */
+.sv-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+  padding: 4.5rem 0;
+  /* Sin fondo propio — hereda del body */
+}
+
+/* Card con imagen a la derecha */
+.sv-card--imgright {
+  grid-template-areas: "content image";
+}
+
+.sv-card--imgright .sv-card-content {
+  grid-area: content;
+  padding-right: 4rem;
+}
+
+.sv-card--imgright .sv-card-image {
+  grid-area: image;
+}
+
+/* Card con imagen a la izquierda */
+.sv-card--imgleft {
+  grid-template-areas: "image content";
+}
+
+.sv-card--imgleft .sv-card-image {
+  grid-area: image;
+}
+
+.sv-card--imgleft .sv-card-content {
+  grid-area: content;
+  padding-left: 4rem;
+}
+
+/* ── Panel imagen ── */
+.sv-card-image {
+  position: relative;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  /* Fondo neutro que contrasta sutilmente con el body */
+  /* background: var(--bg-nav-color, #e7d5c5); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Borde muy sutil */
+  /* border: 1px solid rgba(200, 162, 122, 0.2); */
+}
+
+/* Placeholder — reemplazar con <img> o <svg> */
+.sv-card-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+}
+
+.sv-card-image-slot {
+  /* Este div es el "slot" donde irá el SVG.
+       Cuando tengas el SVG, reemplaza el contenido interno
+       manteniendo este div como wrapper */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sv-card-image-label {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-h3-color, #6b4f3a);
+  opacity: 0.35;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Número de servicio de fondo */
+.sv-card-image-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 7rem;
+  font-weight: 600;
+  color: rgba(75, 58, 47, 0.06);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ── Panel contenido ── */
+.sv-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sv-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--bg-btn-color, #c8a27a);
+  background: rgba(200, 162, 122, 0.1);
+  border: 1px solid rgba(200, 162, 122, 0.25);
+  border-radius: 100px;
+  padding: 4px 12px;
+  width: fit-content;
+}
+
+.sv-card-tag-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--bg-btn-color, #c8a27a);
+  flex-shrink: 0;
+}
+
+.sv-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.22;
+  color: var(--text-h1-color, #4b3a2f);
+}
+
+.sv-card-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-h3-color, #6b4f3a);
+}
+
+.sv-card-divider {
+  width: 30px;
+  height: 2px;
+  background: var(--bg-btn-color, #c8a27a);
+  border-radius: 2px;
+  opacity: 0.55;
+}
+
+.sv-card-body {
+  font-size: 0.91rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--text-h3-color, #6b4f3a);
+  max-width: 42ch;
+}
+
+/* CTA enlace — sin botón lleno, solo texto con flecha */
+.sv-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-body-color, #4b3a2f);
+  border-bottom: 1.5px solid rgba(200, 162, 122, 0.5);
+  padding-bottom: 2px;
+  width: fit-content;
+  margin-top: 0.35rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.sv-card-cta:hover {
+  color: var(--bg-btn-color, #c8a27a);
+  border-color: var(--bg-btn-color, #c8a27a);
+}
+
+.sv-card-cta svg {
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.sv-card-cta:hover svg {
+  transform: translateX(4px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+
+  .sv-card--imgright,
+  .sv-card--imgleft {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "content";
+  }
+
+  .sv-card--imgright .sv-card-content,
+  .sv-card--imgleft .sv-card-content {
+    padding: 0;
+  }
+
+  .sv-card-image {
+    height: 260px;
+  }
+
+  .sv-card {
+    padding: 3rem 0;
+  }
+
+  .sv-card-body {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .sv-section {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .sv-header {
+    margin-bottom: 3rem;
+  }
+
+  .sv-card-title {
+    font-size: 1.4rem;
+  }
+
+  .sv-card-image-num {
+    font-size: 5rem;
+  }
+}

@@ -1,8 +1,8 @@
 export const menuItems = [
   { name: 'inicio', href: 'home.html', label: 'Inicio' },
-  { name: 'servicios', href: 'service.html', label: 'Servicios' },
+  { name: 'servicios', href: 'service.html', label: 'Nuestros Servicios' },
   { name: 'quienes somos', href: 'about.html', label: 'Quiénes somos' },
-  { name: 'contacto', href: 'contact.html', label: 'Contacto' },
+  { name: 'contacto', href: 'contact.html', label: 'Pongase en contacto' },
 ];
 
 export function headerComponent(currentPage: string = 'inicio'): string {
@@ -60,14 +60,14 @@ export function headerComponent(currentPage: string = 'inicio'): string {
             <h1 class="header-brand-title">
               Portafolio <em>Barismo</em>
             </h1>
-            <p class="header-brand-sub">Cafés &amp; Barismo · Aprendices SENA</p>
+            <p class="header-brand-sub">Aprendices SENA · Tecnicos en Barismo</p>
           </div>
         </div>
 
         <!-- Badge -->
         <div class="header-badge">
-          <span class="header-badge-pill">Aprendices SENA</span>
-          <span class="header-badge-ficha">Ficha 3408214</span>
+          <span class="header-badge-pill">Aprendices de Barismo SENA</span>
+          <span class="header-badge-ficha">Ficha · 3408214</span>
         </div>
 
       </div>

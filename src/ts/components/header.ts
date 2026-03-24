@@ -2,7 +2,7 @@ export const menuItems = [
   { name: 'inicio', href: 'home.html', label: 'Inicio' },
   { name: 'servicios', href: 'service.html', label: 'Nuestros Servicios' },
   { name: 'quienes somos', href: 'about.html', label: 'Quiénes somos' },
-  { name: 'contacto', href: 'contact.html', label: 'Pongase en contacto' },
+  { name: 'contacto', href: 'contact.html', label: 'Contactenos' },
 ];
 
 export function headerComponent(currentPage: string = 'inicio'): string {
